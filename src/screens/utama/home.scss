@@ -1,0 +1,31 @@
+.home {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/utama/utama.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: contain;
+  //
+  h1 {
+    width: 400px;
+    padding: 0px 50px;
+    padding-top: 100px;
+    font-weight: bold;
+    color: white;
+  }
+  h3 {
+    padding: 0px 50px;
+    color: white;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home {
+    h1 {
+      width: 300px;
+      padding: 10px;
+    }
+    h3 {
+      padding: 10px;
+    }
+  }
+}

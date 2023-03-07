@@ -1,0 +1,17 @@
+.my-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  .my-heading {
+  }
+  .my-profile {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
