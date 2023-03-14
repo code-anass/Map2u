@@ -5,6 +5,7 @@ body {
 * {
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --primary: #152b52;
   --secondary: #0abb87;
@@ -15,6 +16,7 @@ body {
   --gold-light: #e0c468;
   --grey-dark: #9f9f9f;
   --grey-light: #bebebe;
+  --grey-lightest: #f2f3f8;
   --black: #000;
   --light-green: #8dd8a7;
 }

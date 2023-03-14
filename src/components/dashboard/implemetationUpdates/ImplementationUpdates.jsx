@@ -15,6 +15,7 @@ function ImplementationUpdates() {
       "5 DALAM PELAKSANAAN",
       "9 TELAH DILAKSANA ",
     ],
+    colors: ["#FF6A6A", "#FEEAA5", "#B9DFCE"],
   };
   const series = [3, 5, 9];
   return (
@@ -87,7 +88,7 @@ function ImplementationUpdates() {
           </div>
         </div>
         <div className="graph">
-          <Chart options={options} series={series} type="donut" width="400" />
+          <Chart options={options} series={series} type="donut" width="500" />
         </div>
       </div>
     </div>

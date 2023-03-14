@@ -4,11 +4,11 @@ import { BiUserCircle } from "react-icons/bi";
 import { HiOutlineBell } from "react-icons/hi";
 function MyHeader() {
   return (
-    <div className="my-header">
-      <div className="my-heading">Rancangan Fizikal Negara (RFN)</div>
-      <div className="my-profile">
+    <div className="pvt-header">
+      <p className="right">Rancangan Fizikal Negara (RFN)</p>
+      <div className="left">
         <HiOutlineBell className="icon" />
-        <span>Hi, Muhammad Khan</span>
+        <span>Hi, Luqman Hakeem</span>
         <BiUserCircle className="icon" />
       </div>
     </div>

@@ -47,6 +47,7 @@ const PvtLayout = ({ children }) => {
       }
     });
   }, [window.innerWidth]);
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -55,13 +56,15 @@ const PvtLayout = ({ children }) => {
       <div
         className={collapsed ? "pvt-sidebar pvt-sidebar-not" : "pvt-sidebar"}
       >
-        {collapsed && (
+        {window.innerWidth < 700 && (
           <div className="collapse-icon">
-            <img src={collapseIcon} onClick={() => setCollapsed(false)} />
+            <img src={collapseIcon} onClick={() => setCollapsed(!collapsed)} />
           </div>
         )}
-        <div className="main-logo">
-          <b>MUO</b>
+        <div className={collapsed ? "main-logo-collapsed" : "main-logo"}>
+          <span>
+            <b>MUO</b>
+          </span>
         </div>
         <div className={collapsed ? "desc-main-non" : "desc-main"}>
           <div className="heading">
@@ -80,9 +83,16 @@ const PvtLayout = ({ children }) => {
           style={{ backgroundColor: "transparent" }}
         />
       </div>
-      <div className="pvt-topbar"></div>
-      <div className="pvt-content">k</div>
-      <div className="pvt-bottombar"></div>
+      <div className={`pvt-topbar ${collapsed ? "co-padding-left" : ""}`}>
+        <MyHeader />
+      </div>
+      <div className={`pvt-content ${collapsed ? "co-padding-left" : ""}`}>
+        {children}
+      </div>
+      <div className={`pvt-bottombar ${collapsed ? "co-padding-left" : ""}`}>
+        <img src={MUO} alt="MUO" className="muo" />
+        <img src={PLAN} alt="PLAN" className="plan" />
+      </div>
     </div>
   );
   // return (

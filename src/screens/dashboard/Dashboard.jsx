@@ -6,12 +6,14 @@ import leftLogo from "../../assets/dashboard/leftLogo.png";
 import { FaRegListAlt, FaRegCheckSquare } from "react-icons/fa";
 import { FiEdit } from "react-icons/fi";
 import { IoDocumentTextOutline } from "react-icons/io5";
+
 function Dashboard() {
   const options = {
     labels: [
       "21  STRATEGI TELAH DILAKSANAKAN",
       "17 STRATEGI DALAM PELAKSANAAN ",
     ],
+    colors: ["#B1C7BE", "#B4C7E7"],
   };
   const series = [21, 17];
   return (
@@ -81,7 +83,12 @@ function Dashboard() {
               </div>
             </div>
             <div className="chart-container">
-              <Chart options={options} series={series} type="pie" width="580" />
+              <Chart
+                options={options}
+                series={series}
+                type="donut"
+                width="580"
+              />
             </div>
           </div>
         </div>

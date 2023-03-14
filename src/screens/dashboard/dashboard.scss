@@ -1,8 +1,6 @@
 .dashboard {
-  height: 100%;
   padding: 10px;
   .container {
-    height: 100%;
     border-radius: 10px;
     background-color: var(--white);
     padding: 5px;
@@ -14,9 +12,7 @@
     .child-container {
       display: flex;
       flex: 4;
-      height: 100%;
       .left-side {
-        height: 96%;
         flex: 1;
         margin: 5px;
         border-radius: 5px;
@@ -25,15 +21,14 @@
           rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
         img {
           width: 100%;
-          object-fit: contain;
         }
         p {
           text-align: justify;
+          font-size: 13px;
         }
       }
       .right-side {
         flex: 3;
-        height: 96%;
         margin: 5px;
         flex-direction: column;
         border-radius: 5px;
@@ -50,7 +45,6 @@
             display: flex;
             width: 350px;
             padding: 5px 10px;
-            height: 70px;
             justify-content: space-between;
             align-items: center;
             border: 1px solid var(--grey-light);
@@ -60,7 +54,7 @@
               flex-direction: column;
             }
             .icon {
-              font-size: 30px;
+              font-size: 22px;
               color: var(--grey-drk);
               cursor: pointer;
             }

@@ -1,7 +1,8 @@
 .pvt-layout {
   min-height: 100vh;
-  min-width: 100vh;
-  background-color: var(--grey-light);
+  background-color: var(--grey-lightest);
+  box-sizing: border-box;
+  max-width: fit-content;
 
   .pvt-sidebar {
     width: 255px;
@@ -30,6 +31,26 @@
       align-items: center;
       background-color: var(--dark-black);
       color: var(--white);
+      .icon-x {
+        display: none;
+      }
+    }
+    .main-logo-collapsed {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--dark-black);
+      color: var(--white);
+      // font-size: 13px;
+      span {
+        padding: 0px 5px;
+        font-size: 14px;
+      }
+      .icon-x {
+        display: blco;
+      }
     }
     .desc-main {
       color: var(--white);
@@ -62,12 +83,16 @@
     height: 50px;
     background-color: var(--white);
     position: fixed;
+    padding-left: 255px;
     top: 0;
     z-index: 999;
+    transition: 300ms all ease-in-out;
   }
   .pvt-content {
     padding-top: 55px;
     padding-left: 255px;
+    padding-bottom: 55px;
+    transition: 300ms all ease-in-out;
   }
   .pvt-bottombar {
     width: 100%;
@@ -75,5 +100,18 @@
     background-color: var(--white);
     position: fixed;
     bottom: 0;
+    padding-left: 260px;
+    transition: 300ms all ease-in-out;
+
+    .muo {
+      height: 50px;
+      object-fit: contain;
+    }
+    .plan {
+      height: 50px;
+    }
+  }
+  .co-padding-left {
+    padding-left: 80px;
   }
 }

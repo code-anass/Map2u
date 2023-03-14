@@ -1,17 +1,27 @@
-.my-header {
-  background-color: white;
+.pvt-header {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 10px;
-  .my-heading {
+  align-items: center;
+  padding-left: 5px;
+  height: 100%;
+  position: relative;
+  .right {
   }
-  .my-profile {
+  .left {
+    position: fixed;
+    top: 15px;
+    right: 3px;
     display: flex;
     align-items: center;
-    column-gap: 5px;
     .icon {
       font-size: 20px;
       cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .pvt-header {
+    .right {
+      display: none;
     }
   }
 }
