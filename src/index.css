@@ -1,30 +1,31 @@
 body {
   margin: 0;
 }
+* {
+  box-sizing: border-box;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --primary: #152b52;
+  --primary: #1c2857;
   --secondary: #0abb87;
   --dark-black: #1b1b28;
   --dark-light: #1e1e2d;
   --white: #fff;
   --gold-dark: #d6b035;
+  --gold: #c1903b;
   --gold-light: #e0c468;
   --grey-dark: #9f9f9f;
   --grey-light: #bebebe;
   --grey-lightest: #f2f3f8;
   --black: #000;
   --light-green: #8dd8a7;
-}
-.app-content {
-  display: flex;
-  width: 100%;
-  height: 90vh;
-  padding-top: 80px;
+  --bronz: #9a7155;
+  --silver: #8a8a8a;
+  --platinium: #8a8a8a;
 }
 h1,
 h2,

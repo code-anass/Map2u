@@ -1,41 +1,81 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from "../screens/navbar/Navbar";
+import MainLayout from "../layout/mainlayout/MainLayout";
+import AnalitikData from "../screens/analitikData/AnalitikData";
+import HubungiKami from "../screens/hubungiKami/HubungiKami";
+import LatarBelakang from "../screens/latarBelakang/LatarBelakang";
+import MuatTurun from "../screens/muatTurun/MuatTurun";
+import PlatformIntegrasi from "../screens/platformIntegrasi/PlatformIntegrasi";
+import ProfileBandar from "../screens/profileBandar/ProfileBandar";
+import RepositoryPenarafan from "../screens/repositoryPenarafan/RepositoryPenarafan";
 import Home from "../screens/utama/Home";
-import About from "../screens/about/About";
-import ProfileNSCP from "../screens/profilenscp/ProfileNSCP";
-import PvtLayout from "../layout/PvtLayout";
-import Dashboard from "../screens/dashboard/Dashboard";
-import MonitoringUpdates from "../components/dashboard/monitoringUpdates/MonitoringUpdates";
+
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/profile-nscp" element={<ProfileNSCP />} />
         <Route
-          path="/muo"
+          path="/"
           element={
-            <PvtLayout>
-              <Dashboard />
-            </PvtLayout>
+            <MainLayout>
+              <Home />
+            </MainLayout>
           }
         />
         <Route
-          path="/dashboard"
+          path="/latar-belakang"
           element={
-            <PvtLayout>
-              <Dashboard />
-            </PvtLayout>
+            <MainLayout>
+              <LatarBelakang />
+            </MainLayout>
           }
         />
         <Route
-          path="/monitoring-updates"
+          path="/profile-bandar"
           element={
-            <PvtLayout>
-              <MonitoringUpdates />
-            </PvtLayout>
+            <MainLayout>
+              <ProfileBandar />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/platform-integrasi"
+          element={
+            <MainLayout>
+              <PlatformIntegrasi />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/repository-penarafan"
+          element={
+            <MainLayout>
+              <RepositoryPenarafan />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/analitik-data"
+          element={
+            <MainLayout>
+              <AnalitikData />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/muat-turun"
+          element={
+            <MainLayout>
+              <MuatTurun />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/hubungi-kami"
+          element={
+            <MainLayout>
+              <HubungiKami />
+            </MainLayout>
           }
         />
       </Routes>
