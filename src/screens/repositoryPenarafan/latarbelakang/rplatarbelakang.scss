@@ -1,0 +1,15 @@
+.rplatarbelakang {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--grey-lightest-x);
+  .sidbar {
+    position: fixed;
+    background-color: #001427;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+.css-12w9als {
+  white-space: normal !important;
+}

@@ -7,8 +7,9 @@ import LatarBelakang from "../screens/latarBelakang/LatarBelakang";
 import MuatTurun from "../screens/muatTurun/MuatTurun";
 import PlatformIntegrasi from "../screens/platformIntegrasi/PlatformIntegrasi";
 import ProfileBandar from "../screens/profileBandar/ProfileBandar";
-import RepositoryPenarafan from "../screens/repositoryPenarafan/RepositoryPenarafan";
 import Home from "../screens/utama/Home";
+import KategoryPenarafan from "../screens/repositoryPenarafan/kategorypenarafan/KategoryPenarafan";
+import RpLatarBelakang from "../screens/repositoryPenarafan/latarbelakang/RpLatarBelakang";
 
 function AppRoutes() {
   return (
@@ -47,10 +48,18 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/repository-penarafan"
+          path="/kategory-penarafan"
           element={
             <MainLayout>
-              <RepositoryPenarafan />
+              <KategoryPenarafan />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/latar-penarafan"
+          element={
+            <MainLayout>
+              <RpLatarBelakang />
             </MainLayout>
           }
         />
