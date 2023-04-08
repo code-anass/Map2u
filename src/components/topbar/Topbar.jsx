@@ -23,6 +23,7 @@ function Topbar() {
     {
       label: "Profil",
       key: "3",
+
       children: [
         {
           label: "Profile Bandar Pintar Negeri",
@@ -135,12 +136,17 @@ function Topbar() {
         {
           label: "Permohonan Penarafan Bandar Pintar",
           key: "sb43",
-          onClick: () => null,
+          onClick: () => navigate("/profil-pbt"),
         },
         {
           label: "Status Pencapaian Penarafan Bandar Pintar",
           key: "sb44",
-          onClick: () => null,
+          onClick: () => navigate("/status-pencapaian"),
+        },
+        {
+          label: "Pengurusan Penarafan Bandar Pintar",
+          key: "sb45",
+          onClick: () => navigate("/pengurusan-penarafan"),
         },
       ],
       //
@@ -152,7 +158,7 @@ function Topbar() {
         {
           label: "Pelan Tindakan Bandar Pintar",
           key: "sb51",
-          onClick: () => navigate("/muat-turun"),
+          onClick: () => navigate("/pilan-tindakan"),
         },
         {
           label: "Profil Bandar Pintar",
