@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./kategoryPenarafan.scss";
+import AOS from "aos";
 import bronz from "../../../assets/repositoryPenarafan/bronz.png";
 import silver from "../../../assets/repositoryPenarafan/silver.png";
 import gold from "../../../assets/repositoryPenarafan/gold.png";
 import platinium from "../../../assets/repositoryPenarafan/platinium.png";
 function KategoryPenarafan() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="kategoryPenarafan">
+    <div
+      className="kategoryPenarafan"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
       <h3 className="heading-main">KATEGORI PENARAFAN BANDAR PINTAR</h3>
       <div className="cards">
-        <div className="card bronz-border">
+        <div
+          className="card bronz-border"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+        >
           <div className="first">
             <p>Smart City Early Adopter</p>
             <p>
@@ -26,7 +39,11 @@ function KategoryPenarafan() {
             </ul>
           </div>
         </div>
-        <div className="card silver-border">
+        <div
+          className="card silver-border"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+        >
           <div className="first">
             <p>Developing Smart City</p>
             <p>
@@ -46,7 +63,11 @@ function KategoryPenarafan() {
             </ul>
           </div>
         </div>
-        <div className="card gold-border">
+        <div
+          className="card gold-border"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+        >
           <div className="first">
             <p>Leading Smart City</p>
             <p>
@@ -67,7 +88,11 @@ function KategoryPenarafan() {
             </ul>
           </div>
         </div>
-        <div className="card platinium-border">
+        <div
+          className="card platinium-border"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+        >
           <div className="first">
             <p>Visionary Smart City</p>
             <p>

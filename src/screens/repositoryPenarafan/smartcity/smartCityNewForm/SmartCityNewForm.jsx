@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./smartcitynewform.scss";
+import AOS from "aos";
 import pengurusan from "../../../../assets/repositoryPenarafan/pengurusan.png";
 import {
   Button,
@@ -29,8 +30,16 @@ function SmartCityNewForm() {
   const [form] = Form.useForm();
   const [form2] = Form.useForm();
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="smartcitynewform">
+    <div
+      className="smartcitynewform"
+      data-aos="fade-down"
+      data-aos-duration="3000"
+    >
       <div className="top">
         <div>
           <h3>TAMBAH INDIKATOR BANDAR PINTAR</h3>

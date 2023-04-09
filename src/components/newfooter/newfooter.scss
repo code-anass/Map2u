@@ -1,0 +1,114 @@
+.new-footer {
+  display: flex;
+  min-height: 50vh;
+  border-top: 1px solid rgb(208, 225, 231);
+  border-bottom: 1px solid rgb(213, 229, 235);
+  .f-left {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 20px 50px;
+    justify-content: space-between;
+    .item {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: var(--primary);
+      }
+      .inner-item {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        img {
+          height: 120px;
+          object-fit: contain;
+        }
+        p {
+          margin: 0px;
+          font-size: 11px;
+        }
+      }
+    }
+    .inner {
+      padding-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      p {
+        font-size: 12px;
+        color: var(--primary);
+        cursor: pointer;
+        &:hover {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+  .f-right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 60px 20px 50px;
+    justify-content: space-between;
+    background: url("../../assets/newfooter/footer.png");
+    background-size: cover;
+    .item {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: var(--primary);
+      }
+      .inner-item {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        img {
+          height: 120px;
+          object-fit: contain;
+        }
+        p {
+          margin: 0px;
+          font-size: 11px;
+        }
+      }
+      .inner-x {
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+        img {
+          width: 100px;
+          object-fit: contain;
+        }
+        .icon-f {
+          cursor: pointer;
+          &:hover {
+            color: var(--blue);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .inner-x:first-child {
+        padding-top: 30px;
+      }
+    }
+    .inner {
+      padding-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      p {
+        font-size: 12px;
+        color: var(--primary);
+        cursor: pointer;
+        &:hover {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}
+.bottom-f {
+  text-align: center;
+  color: var(--primary);
+  padding: 15px 0px;
+}

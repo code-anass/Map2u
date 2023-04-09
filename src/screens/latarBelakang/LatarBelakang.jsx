@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./latarBelakang.scss";
+import AOS from "aos";
 // imgs section
 import about from "../../assets/latarBelakang/about.png";
 import img1 from "../../assets/latarBelakang/img1.png";
@@ -14,8 +15,12 @@ import Perbadanan from "../../assets/latarBelakang/authorities/Perbadanan.png";
 import PulauPinang from "../../assets/latarBelakang/authorities/PulauPinang.png";
 //end of imgs
 function LatarBelakang() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="latarBelakang">
+    <div className="latarBelakang" data-aos="fade-up" data-aos-duration="2000">
       <h2 className="main-heading">LATAR BELAKANG</h2>
       <p className="main-heading">PLATFORM BANDAR PINTAR NEGARA</p>
       <img src={about} alt="" className="about-img" />
@@ -28,7 +33,7 @@ function LatarBelakang() {
           isu-isu perbandaran
         </p>
       </div>
-      <div className="objektif">
+      <div className="objektif" data-aos="fade-up" data-aos-duration="2000">
         <h3>OBJEKTIF NSCP</h3>
         <ol>
           <li>
@@ -63,7 +68,7 @@ function LatarBelakang() {
           </li>
         </ol>
       </div>
-      <div className="fungsi-nscp">
+      <div className="fungsi-nscp" data-aos="fade-up" data-aos-duration="2000">
         <h3>FUNGSI NSCP</h3>
         <div className="fungsi-cards">
           <div className="card">
@@ -84,10 +89,10 @@ function LatarBelakang() {
           </div>
         </div>
       </div>
-      <h3 className="heading-pihak">
+      <h3 className="heading-pihak" data-aos="fade-up" data-aos-duration="2000">
         PIHAK BERKUASA TEMPATAN PERINTIS BANDAR PINTAR
       </h3>
-      <div className="authorities">
+      <div className="authorities" data-aos="fade-up" data-aos-duration="2000">
         <div className="authority">
           <img src={Perbadanan} />
           <p className="title">Perbadanan Putrajaya</p>

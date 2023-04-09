@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.scss";
+import AOS from "aos";
 function Home() {
-  return <div className="home"></div>;
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  return (
+    <div className="home" data-aos="fade-down" data-aos-duration="1000"></div>
+  );
 }
 export default Home;

@@ -4,6 +4,7 @@ import MapContainer from "../../../components/map/currentlocation/CurrentLocatio
 import { useNavigate } from "react-router-dom";
 import permohonan from "../../../assets/repositoryPenarafan/permohan/permohonan.png";
 import "./profilePbt.scss";
+import AOS from "aos";
 function ProfilePbt() {
   const [currentPosition, setCurrentPosition] = useState({});
   const [form] = Form.useForm();
@@ -16,13 +17,17 @@ function ProfilePbt() {
     "Majlis Daerah",
   ];
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  useEffect(() => {
     form.setFieldsValue({
       latitude: currentPosition.lat,
       longitude: currentPosition.lng,
     });
   }, [currentPosition]);
   return (
-    <div className="profile-pbt">
+    <div className="profile-pbt" data-aos="fade-down" data-aos-duration="2000">
       <img src={permohonan} alt="" />
       <div className="form">
         <h3 className="heading">PROFILE PBT</h3>

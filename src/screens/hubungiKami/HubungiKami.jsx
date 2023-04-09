@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./hubungi.scss";
+import AOS from "aos";
 import hubungi from "../../assets/hubungiKami/hubungi.png";
 import contact from "../../assets/hubungiKami/contact.png";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { HiUser } from "react-icons/hi";
 function HubungiKami() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="hubungiKami">
+    <div className="hubungiKami" data-aos="fade-down" data-aos-duration="2000">
       <div className="left">
         <img src={hubungi} alt="" />
       </div>

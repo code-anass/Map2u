@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./statuspencapaian.scss";
+import AOS from "aos";
 import SimpleMap from "../../../components/map/simpleMap/SimpleMap";
 import MapContainer from "../../../components/map/currentlocation/CurrentLocation";
 import gold from "../../../assets/repositoryPenarafan/gold.png";
@@ -8,9 +9,16 @@ import platinium from "../../../assets/repositoryPenarafan/platinium.png";
 import silver from "../../../assets/repositoryPenarafan/silver.png";
 function StatusPencapain() {
   const [currentPosition, setCurrentPosition] = useState({});
-
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="status-pencapaian">
+    <div
+      className="status-pencapaian"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
       <h2 className="heading">STATUS PENCAPAIAN BANDAR PINTAR</h2>
       <div className="main-div">
         <div className="left">

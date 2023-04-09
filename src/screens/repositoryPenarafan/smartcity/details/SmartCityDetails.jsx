@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./smartcitydetails.scss";
 import pengurusan from "../../../../assets/repositoryPenarafan/pengurusan.png";
 import { Button } from "antd";
+import AOS from "aos";
 function SmartCityDetails() {
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="smartcitydetails">
+    <div
+      className="smartcitydetails"
+      data-aos="fade-upd"
+      data-aos-duration="2000"
+    >
       <div className="top">
         <div>
           <h3>CITY SERVICES ACCESSIBLE THAT CAN BE REQUESTED ONLINE</h3>

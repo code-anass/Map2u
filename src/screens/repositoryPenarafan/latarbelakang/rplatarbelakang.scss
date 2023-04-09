@@ -1,14 +1,8 @@
 .rplatarbelakang {
   width: 100%;
   background-color: var(--grey-lightest-x);
-  .sidbar {
-    position: fixed;
-    background-color: #272f3b;
-    height: 100%;
-    overflow-y: scroll;
-  }
+
   .content-rplatar {
-    padding-left: 300px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,28 +36,4 @@
       }
     }
   }
-}
-.css-12w9als {
-  white-space: normal !important;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #272f3b;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #272f3b;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: grey;
 }

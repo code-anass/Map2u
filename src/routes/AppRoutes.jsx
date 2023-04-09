@@ -64,8 +64,10 @@ function AppRoutes() {
         <Route
           path="/latar-penarafan"
           element={
-            <MainLayout>
-              <RpLatarBelakang />
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <RpLatarBelakang />
+              </NestedLayout>
             </MainLayout>
           }
         />
@@ -80,7 +82,7 @@ function AppRoutes() {
         <Route
           path="/pilan-tindakan"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <PilanTindakan />
               </NestedLayout>
@@ -90,7 +92,7 @@ function AppRoutes() {
         <Route
           path="/profil-pbt"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <ProfilePbt />
               </NestedLayout>
@@ -100,7 +102,7 @@ function AppRoutes() {
         <Route
           path="/status-pencapaian"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <StatusPencapain />
               </NestedLayout>
@@ -110,7 +112,7 @@ function AppRoutes() {
         <Route
           path="/pengurusan-penarafan"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <PengurusanPenarafan />
               </NestedLayout>
@@ -120,7 +122,7 @@ function AppRoutes() {
         <Route
           path="/smartcity/new"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <SmartCityNewForm />
               </NestedLayout>
@@ -130,7 +132,7 @@ function AppRoutes() {
         <Route
           path="/smartcity/details/:id"
           element={
-            <MainLayout>
+            <MainLayout isFooter={false}>
               <NestedLayout>
                 <SmartCityDetails />
               </NestedLayout>
