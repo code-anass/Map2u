@@ -16,7 +16,10 @@ import StatusPencapain from "../screens/repositoryPenarafan/statuspencapaian/Sta
 import PengurusanPenarafan from "../screens/repositoryPenarafan/pengurusanPenarafan/PengurusanPenarafan";
 import SmartCityNewForm from "../screens/repositoryPenarafan/smartcity/smartCityNewForm/SmartCityNewForm";
 import SmartCityDetails from "../screens/repositoryPenarafan/smartcity/details/SmartCityDetails";
-
+import InsentifKepada from "../screens/repositoryPenarafan/latarbelakang/InsentifKepada/InsentifKepada";
+import ProsesPenarafan from "../screens/repositoryPenarafan/latarbelakang/prosesPenarafan/ProsesPenarafan";
+import PuncaKuasa from "../screens/repositoryPenarafan/latarbelakang/puncaKuasa/PuncaKuasa";
+import Ms_Iso from "../screens/repositoryPenarafan/latarbelakang/ms_iso/Ms_Iso";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -67,6 +70,46 @@ function AppRoutes() {
             <MainLayout isFooter={false}>
               <NestedLayout>
                 <RpLatarBelakang />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/latar_belakang/insentif-kepada"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <InsentifKepada />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/latar_belakang/ms-iso"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <Ms_Iso />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/latar_belakang/proses-penarafan"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <ProsesPenarafan />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/latar_belakang/punca-kuasa"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <PuncaKuasa />
               </NestedLayout>
             </MainLayout>
           }

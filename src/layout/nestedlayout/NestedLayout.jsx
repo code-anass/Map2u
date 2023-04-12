@@ -59,22 +59,71 @@ function NestedLayout({ children }) {
       icon: <BsStack />,
       children: [
         {
-          label: "Latar Belakang Penarafan",
+          label: "Latar Belakang Penarafan Bandar Pintar",
           key: "sb41",
           link: "/latar-penarafan",
+          children: [
+            {
+              label: "Latar Belakang",
+              link: "/latar-penarafan",
+              key: "qwe1",
+            },
+            {
+              label: "Proses Penarafan",
+              link: "/latar_belakang/proses-penarafan",
+              key: "qwe2",
+            },
+            {
+              label: "Punca Kuasa",
+              link: "/latar_belakang/punca-kuasa",
+              key: "qwe3",
+            },
+            {
+              label: "MS ISO 37122: 2019",
+              link: "/latar_belakang/ms-iso",
+              key: "qwe4",
+            },
+            {
+              label: "Insentif Kepada PBT",
+              link: "/latar_belakang/insentif-kepada",
+              key: "qwe5",
+            },
+          ],
         },
         {
-          label: "Ketegori Penarafan Bandar Pintar",
+          label: "Ketegori Penarafan",
           key: "sb42",
           link: "/kategory-penarafan",
         },
         {
-          label: "Permohonan Penarafan Bandar Pintar",
+          label: "Permohonan Penarafan",
           key: "sb43",
           link: "/",
+          children: [
+            {
+              label: "Profile PBT",
+              link: "/profil-pbt",
+              key: "qweY1",
+            },
+            {
+              label: "Permohonan",
+              link: "/profil-pbt",
+              key: "qweY2",
+            },
+            {
+              label: "Status Permohonan",
+              link: "/profil-pbt",
+              key: "qweY3",
+            },
+            {
+              label: "Peti Masuk",
+              link: "/profil-pbt",
+              key: "qweY4",
+            },
+          ],
         },
         {
-          label: "Status Pencapaian Penarafan Bandar Pintar",
+          label: "Keputusan Penarafan Bandar Pintar",
           key: "sb44",
           link: "/",
         },
@@ -258,20 +307,51 @@ function NestedLayout({ children }) {
                         backgroundColor: "#272F3B",
                       }}
                     >
-                      {val.children.map((mi) => (
-                        <MenuItem
-                          rootStyles={{
-                            ["." + menuClasses.button]: {
-                              backgroundColor: "#272F3B",
-                              color: "#fff",
-                              "&:hover": {},
-                            },
-                          }}
-                          component={<Link to={mi.link} />}
-                        >
-                          {mi.label}
-                        </MenuItem>
-                      ))}
+                      {val?.children.map((mi) => {
+                        if (mi?.children?.length > 0) {
+                          return (
+                            <SubMenu
+                              label={mi.label}
+                              rootStyles={{
+                                color: "grey",
+                                backgroundColor: "#272F3B",
+                              }}
+                            >
+                              {mi.children.map((mi2) => {
+                                return (
+                                  <MenuItem
+                                    rootStyles={{
+                                      ["." + menuClasses.button]: {
+                                        backgroundColor: "#272F3B",
+                                        color: "#fff",
+                                        "&:hover": {},
+                                      },
+                                    }}
+                                    component={<Link to={mi2.link} />}
+                                  >
+                                    {mi2.label}
+                                  </MenuItem>
+                                );
+                              })}
+                            </SubMenu>
+                          );
+                        } else {
+                          return (
+                            <MenuItem
+                              rootStyles={{
+                                ["." + menuClasses.button]: {
+                                  backgroundColor: "#272F3B",
+                                  color: "#fff",
+                                  "&:hover": {},
+                                },
+                              }}
+                              component={<Link to={mi.link} />}
+                            >
+                              {mi.label}
+                            </MenuItem>
+                          );
+                        }
+                      })}
                     </SubMenu>
                   );
                 } else {
