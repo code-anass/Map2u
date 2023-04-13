@@ -107,17 +107,17 @@ function NestedLayout({ children }) {
             },
             {
               label: "Permohonan",
-              link: "/profil-pbt",
+              link: "/permohonan_penarafan/permohonan",
               key: "qweY2",
             },
             {
               label: "Status Permohonan",
-              link: "/profil-pbt",
+              link: "/permohonan_penarafan/statuspermohonan",
               key: "qweY3",
             },
             {
               label: "Peti Masuk",
-              link: "/profil-pbt",
+              link: "/permohonan_penarafan/petimasuk",
               key: "qweY4",
             },
           ],

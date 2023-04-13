@@ -11,7 +11,6 @@ import Home from "../screens/utama/Home";
 import KategoryPenarafan from "../screens/repositoryPenarafan/kategorypenarafan/KategoryPenarafan";
 import RpLatarBelakang from "../screens/repositoryPenarafan/latarbelakang/RpLatarBelakang";
 import PilanTindakan from "../screens/muatTurun/pilantindakan/PilanTindakan";
-import ProfilePbt from "../screens/repositoryPenarafan/profilePbt/ProfilePbt";
 import StatusPencapain from "../screens/repositoryPenarafan/statuspencapaian/StatusPencapain";
 import PengurusanPenarafan from "../screens/repositoryPenarafan/pengurusanPenarafan/PengurusanPenarafan";
 import SmartCityNewForm from "../screens/repositoryPenarafan/smartcity/smartCityNewForm/SmartCityNewForm";
@@ -20,6 +19,10 @@ import InsentifKepada from "../screens/repositoryPenarafan/latarbelakang/Insenti
 import ProsesPenarafan from "../screens/repositoryPenarafan/latarbelakang/prosesPenarafan/ProsesPenarafan";
 import PuncaKuasa from "../screens/repositoryPenarafan/latarbelakang/puncaKuasa/PuncaKuasa";
 import Ms_Iso from "../screens/repositoryPenarafan/latarbelakang/ms_iso/Ms_Iso";
+import Permohonan from "../screens/repositoryPenarafan/permohonanpenarafan/permohonan/Permohonan";
+import PetiMasuk from "../screens/repositoryPenarafan/permohonanpenarafan/petimasuk/PetiMasuk";
+import StatusPermohonan from "../screens/repositoryPenarafan/permohonanpenarafan/statusPermohonan/StatusPermohonan";
+import ProfilePbt from "../screens/repositoryPenarafan/permohonanpenarafan/profilePbt/ProfilePbt";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -110,6 +113,36 @@ function AppRoutes() {
             <MainLayout isFooter={false}>
               <NestedLayout>
                 <PuncaKuasa />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/permohonan_penarafan/permohonan"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <Permohonan />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/permohonan_penarafan/petimasuk"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <PetiMasuk />
+              </NestedLayout>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/permohonan_penarafan/statuspermohonan"
+          element={
+            <MainLayout isFooter={false}>
+              <NestedLayout>
+                <StatusPermohonan />
               </NestedLayout>
             </MainLayout>
           }
