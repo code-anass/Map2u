@@ -26,6 +26,11 @@
       gap: 10px;
     }
   }
+  .icon-permohonan {
+    font-size: 20px;
+    color: var(--blue);
+    cursor: pointer;
+  }
 }
 .ant-steps .ant-steps-item-wait .ant-steps-item-icon {
   background: var(--white);

@@ -1,4 +1,4 @@
-.step3-form {
+.step6-form {
   width: 80%;
   margin: auto;
   background-color: yello;
@@ -16,6 +16,10 @@
     border-radius: 10px;
     margin-top: 10px;
   }
+  .notice:first-child {
+    background-color: red;
+  }
+
   h3 {
     color: var(--white);
     padding-top: 10px;
