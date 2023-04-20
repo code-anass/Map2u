@@ -302,7 +302,7 @@ function Step10({ current, setCurrent }) {
             <Button type="primary" htmlType="submit">
               Simpan
             </Button>
-            <Button type="primary" onClick={() => setCurrent(current - 1)}>
+            <Button type="primary" onClick={() => setCurrent(current + 1)}>
               Seterusnya
             </Button>
           </div>

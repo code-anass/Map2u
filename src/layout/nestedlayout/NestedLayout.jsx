@@ -125,7 +125,7 @@ function NestedLayout({ children }) {
         {
           label: "Keputusan Penarafan Bandar Pintar",
           key: "sb44",
-          link: "/",
+          link: "/status-pencapaian",
         },
       ],
     },

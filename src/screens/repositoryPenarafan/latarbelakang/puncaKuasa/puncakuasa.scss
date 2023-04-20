@@ -1,0 +1,108 @@
+.puncakuasa {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-bottom: 50px;
+  .top-h {
+    margin: 0 auto;
+    padding: 10px 0px;
+    h2 {
+      text-align: center;
+    }
+  }
+  .card {
+    width: 95%;
+    min-height: 30vh;
+    background-color: var(--white);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    .left {
+      flex: 1;
+      background-color: var(--cyan);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 150px;
+        object-fit: contain;
+      }
+    }
+    .right {
+      flex: 4;
+      padding: 20px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      p {
+        margin: 0px;
+      }
+      .bold {
+        font-weight: bold;
+        color: var(--cyan);
+      }
+      .hr {
+        border-bottom: 1px solid var(--grey-light);
+        padding-top: 20px;
+      }
+    }
+    &:hover {
+      transform: scaleY(1.01);
+    }
+  }
+  h3 {
+    margin: 0 auto;
+  }
+  .card2 {
+    width: 95%;
+    min-height: 20vh;
+    background-color: var(--white);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    .left {
+      flex: 1;
+      background-color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 80px;
+        object-fit: contain;
+      }
+    }
+    .right {
+      flex: 4;
+      padding: 20px;
+      padding-right: 130px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      p {
+        margin: 0px;
+      }
+      .bold {
+        font-weight: bold;
+        color: var(--cyan);
+      }
+      .hr {
+        border-bottom: 1px solid var(--grey-light);
+        padding-top: 20px;
+      }
+    }
+    &:hover {
+      transform: scaleY(1.01);
+    }
+  }
+}

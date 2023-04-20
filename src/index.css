@@ -13,6 +13,7 @@ body {
   --primary: #1c2857;
   --blue: blue;
   --secondary: #0abb87;
+  --cyan: #00cfd5;
   --dark-black: #1b1b28;
   --dark-light: #1e1e2d;
   --white: #fff;
@@ -30,6 +31,7 @@ body {
   --silver: #8a8a8a;
   --platinium: #8a8a8a;
   --red: red;
+  --dark-voilet: #5500a1;
 }
 h1,
 h2,

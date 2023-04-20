@@ -12,6 +12,8 @@ import Step7 from "./content/step7/Step7";
 import Step8 from "./content/step8/Step8";
 import Step9 from "./content/step9/Step9";
 import Step10 from "./content/step10/Step10";
+import Step11 from "./content/step11/Step11";
+import Step12 from "./content/step12/Step12";
 import { Steps, Button } from "antd";
 import { useState } from "react";
 
@@ -57,6 +59,14 @@ function Permohonan() {
     {
       title: "",
       content: <Step10 current={current} setCurrent={setCurrent} />,
+    },
+    {
+      title: "",
+      content: <Step11 current={current} setCurrent={setCurrent} />,
+    },
+    {
+      title: "",
+      content: <Step12 current={current} setCurrent={setCurrent} />,
     },
   ];
 
