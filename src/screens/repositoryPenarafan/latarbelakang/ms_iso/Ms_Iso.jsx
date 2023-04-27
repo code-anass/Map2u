@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./msiso.scss";
 import iso from "../../../../assets/repositoryPenarafan/latar/iso.png";
 import iso1 from "../../../../assets/repositoryPenarafan/latar/iso_1.png";
@@ -7,10 +7,15 @@ import iso3 from "../../../../assets/repositoryPenarafan/latar/iso_3.png";
 import iso4 from "../../../../assets/repositoryPenarafan/latar/iso_4.png";
 import iso5 from "../../../../assets/repositoryPenarafan/latar/iso_5.png";
 import iso6 from "../../../../assets/repositoryPenarafan/latar/iso_6.png";
+import AOS from "aos";
 
 function Ms_Iso() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="msiso">
+    <div className="msiso" data-aos="fade-down" data-aos-duration="2000">
       <div className="top-h">
         <h2>MS ISO 37122 : 2019</h2>
         <h3>STANDARD INDIKATOR BANDAR PINTAR</h3>

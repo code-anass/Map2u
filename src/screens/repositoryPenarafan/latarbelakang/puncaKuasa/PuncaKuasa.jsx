@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./puncakuasa.scss";
 import book from "../../../../assets/repositoryPenarafan/latar/book.png";
 import phase1 from "../../../../assets/repositoryPenarafan/latar/phase1.png";
 import phase2 from "../../../../assets/repositoryPenarafan/latar/phase2.png";
 import phase3 from "../../../../assets/repositoryPenarafan/latar/phase3.png";
+import AOS from "aos";
 function PuncaKuasa() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="puncakuasa">
+    <div className="puncakuasa" data-aos="fade-down" data-aos-duration="2000">
       <div className="top-h">
         <h2>PUNCA KUASA</h2>
         <h3>RANGKA KERJA BANDAR PINTAR MALAYSIA 2019 - 2025</h3>
