@@ -22,12 +22,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
+    gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    padding: 20px;
     .card {
       width: 170px;
-      height: 180px;
+      min-height: 180px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -42,6 +43,12 @@
         text-align: center;
         font-size: 11px;
       }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .profileBandar {
+    .profiles {
     }
   }
 }

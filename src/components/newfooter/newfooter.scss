@@ -1,6 +1,7 @@
 .new-footer {
   display: flex;
   min-height: 50vh;
+  flex-wrap: wrap;
   border-top: 1px solid rgb(208, 225, 231);
   border-bottom: 1px solid rgb(213, 229, 235);
   .f-left {

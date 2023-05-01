@@ -1,55 +1,81 @@
-.hubungiKami {
-  height: 100%;
+.hubung {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 10px;
-  flex: 5;
-  .left {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-
-    img {
-      height: 500px;
-      object-fit: contain;
-    }
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  h2 {
+    text-align: center;
+    padding-top: 20px;
   }
-  .right {
-    flex: 3;
-    h3 {
-      color: var(--primary);
-    }
-    .contact {
-      width: 80%;
-      height: 500px;
-      background-color: var(--primary);
-      border-radius: 10px;
-      padding: 20px;
-      color: var(--white);
+  .hubungiKami {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 5;
+    .left {
+      flex: 2;
       display: flex;
-      flex-direction: column;
-      gap: 5px;
+      justify-content: center;
+
       img {
-        width: fit-content;
+        height: 500px;
         object-fit: contain;
       }
-      .address1 {
-        font-size: 12px;
-        .cell {
-          margin-top: 10px;
-          .row {
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            .icon {
-              font-size: 15px;
-            }
-            .icon2 {
-              font-size: 18px;
+    }
+    .right {
+      flex: 3;
+      h3 {
+        color: var(--primary);
+      }
+      .contact {
+        width: 100%;
+        height: 500px;
+        background-color: var(--primary);
+        border-radius: 10px;
+        padding: 20px;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        img {
+          width: fit-content;
+          object-fit: contain;
+        }
+        .address1 {
+          font-size: 12px;
+          .cell {
+            margin-top: 10px;
+            .row {
+              margin-bottom: 5px;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              .icon {
+                font-size: 15px;
+              }
+              .icon2 {
+                font-size: 18px;
+              }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hubung {
+    .hubungiKami {
+      flex-direction: column;
+      gap: 20px;
+      .right {
+        .contact {
+          width: 90%;
         }
       }
     }

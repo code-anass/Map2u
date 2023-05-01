@@ -1,19 +1,45 @@
 .home {
   width: 100%;
   min-height: 100vh;
-  background-image: url("../../assets/utama/utamaX.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  object-fit: contain;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .headings-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 100px;
+    width: 60%;
+    top: 100px;
+    h1 {
+      color: var(--white);
+      font-size: 40px;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      color: aliceblue;
+    }
+  }
 }
 @media screen and (max-width: 750px) {
   .home {
-    h1 {
-      width: 300px;
-      padding: 10px;
+    min-height: 30vh;
+    img {
+      width: 100%;
     }
-    h3 {
-      padding: 10px;
+    .headings-main {
+      top: 50px;
+      width: 90%;
+      h1 {
+        font-size: 18px;
+      }
+      h3 {
+        font-size: 12px;
+      }
     }
   }
 }
