@@ -27,6 +27,7 @@
         padding: 10px;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
         border-radius: 30px;
         background-color: var(--cyan);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
@@ -55,6 +56,30 @@
       img {
         width: 400px;
         object-fit: contain;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .insentif-kepada {
+    h3 {
+      text-align: center;
+    }
+    .container-insentif {
+      padding-left: 10px;
+      flex-direction: column;
+      .lft {
+        .card {
+          flex-direction: column;
+        }
+        .card-white {
+          flex-direction: column;
+        }
+      }
+      .rght {
+        img {
+          width: 260px;
+        }
       }
     }
   }

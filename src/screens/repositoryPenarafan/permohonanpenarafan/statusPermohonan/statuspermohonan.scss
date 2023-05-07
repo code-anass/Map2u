@@ -19,3 +19,11 @@
     min-height: 50vh;
   }
 }
+@media screen and (max-width: 700px) {
+  .status-permohonan {
+    .permohonan-table {
+      width: 280px;
+      overflow-x: auto;
+    }
+  }
+}

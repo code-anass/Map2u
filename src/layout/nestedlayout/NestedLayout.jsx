@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./nestedlayout.scss";
 import { BiHomeAlt, BiListUl } from "react-icons/bi";
 import { GiChart } from "react-icons/gi";
@@ -16,6 +16,7 @@ import {
   SubMenu,
   ProSidebarProvider,
   menuClasses,
+  useProSidebar,
 } from "react-pro-sidebar";
 function NestedLayout({ children }) {
   const itemss = [
@@ -275,101 +276,111 @@ function NestedLayout({ children }) {
       link: "/",
     },
   ];
+  const { collapseSidebar } = useProSidebar();
+  useEffect(() => {
+    if (window.innerWidth < 700) {
+      collapseSidebar();
+    }
+  }, []);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 700) {
+        collapseSidebar();
+      } else {
+        collapseSidebar();
+      }
+    });
+  }, [window.innerWidth]);
   return (
     <div className="nestedlayout">
       <div className="nested-sidebar">
-        <ProSidebarProvider>
-          <Sidebar
-            backgroundColor="#272F3B"
-            rootStyles={{ color: "grey" }}
-            width="260px"
-          >
-            <Menu>
-              <p
-                style={{
-                  paddingLeft: "30px",
-                  paddingTop: "10px",
-                  fontSize: "15px",
-                  fontWeight: "bold",
-                }}
-              >
-                MAIN MENU
-              </p>
+        <Sidebar
+          backgroundColor="#272F3B"
+          rootStyles={{ color: "grey" }}
+          // width="260px"
+        >
+          <Menu>
+            <p
+              style={{
+                paddingLeft: "30px",
+                paddingTop: "10px",
+                fontSize: "15px",
+                fontWeight: "bold",
+              }}
+            >
+              MAIN MENU
+            </p>
 
-              {itemss.map((val, index) => {
-                if (val?.children?.length > 0) {
-                  return (
-                    <SubMenu
-                      label={val.label}
-                      icon={val.icon}
-                      rootStyles={{
-                        color: "grey",
-                        backgroundColor: "#272F3B",
-                      }}
-                    >
-                      {val?.children.map((mi) => {
-                        if (mi?.children?.length > 0) {
-                          return (
-                            <SubMenu
-                              label={mi.label}
-                              rootStyles={{
-                                color: "grey",
+            {itemss.map((val, index) => {
+              if (val?.children?.length > 0) {
+                return (
+                  <SubMenu
+                    label={val.label}
+                    icon={val.icon}
+                    rootStyles={{
+                      color: "grey",
+                      backgroundColor: "#272F3B",
+                    }}
+                  >
+                    {val?.children.map((mi) => {
+                      if (mi?.children?.length > 0) {
+                        return (
+                          <SubMenu
+                            label={mi.label}
+                            rootStyles={{
+                              color: "grey",
+                              backgroundColor: "#272F3B",
+                            }}
+                          >
+                            {mi.children.map((mi2) => {
+                              return (
+                                <MenuItem
+                                  rootStyles={{
+                                    ["." + menuClasses.button]: {
+                                      backgroundColor: "#272F3B",
+                                      color: "#fff",
+                                      "&:hover": {},
+                                    },
+                                  }}
+                                  component={<Link to={mi2.link} />}
+                                >
+                                  {mi2.label}
+                                </MenuItem>
+                              );
+                            })}
+                          </SubMenu>
+                        );
+                      } else {
+                        return (
+                          <MenuItem
+                            rootStyles={{
+                              ["." + menuClasses.button]: {
                                 backgroundColor: "#272F3B",
-                              }}
-                            >
-                              {mi.children.map((mi2) => {
-                                return (
-                                  <MenuItem
-                                    rootStyles={{
-                                      ["." + menuClasses.button]: {
-                                        backgroundColor: "#272F3B",
-                                        color: "#fff",
-                                        "&:hover": {},
-                                      },
-                                    }}
-                                    component={<Link to={mi2.link} />}
-                                  >
-                                    {mi2.label}
-                                  </MenuItem>
-                                );
-                              })}
-                            </SubMenu>
-                          );
-                        } else {
-                          return (
-                            <MenuItem
-                              rootStyles={{
-                                ["." + menuClasses.button]: {
-                                  backgroundColor: "#272F3B",
-                                  color: "#fff",
-                                  "&:hover": {},
-                                },
-                              }}
-                              component={<Link to={mi.link} />}
-                            >
-                              {mi.label}
-                            </MenuItem>
-                          );
-                        }
-                      })}
-                    </SubMenu>
-                  );
-                } else {
-                  return val.icon ? (
-                    <MenuItem
-                      icon={val.icon}
-                      component={<Link to={val.link} />}
-                    >
-                      {val.label}
-                    </MenuItem>
-                  ) : (
-                    <MenuItem>{val.label}</MenuItem>
-                  );
-                }
-              })}
-            </Menu>
-          </Sidebar>
-        </ProSidebarProvider>
+                                color: "#fff",
+                                "&:hover": {},
+                              },
+                            }}
+                            component={<Link to={mi.link} />}
+                          >
+                            {mi.label}
+                          </MenuItem>
+                        );
+                      }
+                    })}
+                  </SubMenu>
+                );
+              } else {
+                return val.icon ? (
+                  <MenuItem icon={val.icon} component={<Link to={val.link} />}>
+                    {val.label}
+                  </MenuItem>
+                ) : (
+                  <MenuItem>{val.label}</MenuItem>
+                );
+              }
+            })}
+          </Menu>
+        </Sidebar>
       </div>
       <div className="content-nested">{children}</div>
     </div>

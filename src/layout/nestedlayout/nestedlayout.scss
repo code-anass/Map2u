@@ -16,6 +16,18 @@
     // background-color: var(--primary);
   }
 }
+@media screen and (max-width: 700px) {
+  .nestedlayout {
+    display: flex;
+    .nested-sidebar {
+      position: absolute;
+      background-color: var(--grey-lightest-x);
+    }
+    .content-nested {
+      padding-left: 60px;
+    }
+  }
+}
 .css-12w9als {
   white-space: normal !important;
 }
