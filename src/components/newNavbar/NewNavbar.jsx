@@ -89,7 +89,7 @@ function NewNavbar() {
               </ul>
             </li>
             <li className="dropdown">
-              <NavLink to="/latar-penarafan">Repository Penarafan</NavLink>
+              <NavLink to="/latar-penarafan">Penarafan Bandar Pintar</NavLink>
               <ul className="dropdown-menu">
                 <li>
                   <NavLink to="/latar-penarafan">

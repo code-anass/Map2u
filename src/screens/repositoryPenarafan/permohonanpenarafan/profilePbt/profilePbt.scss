@@ -20,7 +20,7 @@
     .notice {
       width: 100%;
       background-color: var(--light-green);
-      height: 50px;
+      min-height: 50px;
       display: flex;
       align-items: center;
       padding: 5px 15px;
@@ -37,6 +37,13 @@
           color: var(--red);
         }
       }
+    }
+  }
+}
+@media screen and (max-width:700px) {
+  .profile-pbt{
+    .form{
+      width: 95%;
     }
   }
 }
