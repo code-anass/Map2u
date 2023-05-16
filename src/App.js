@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import NewFooter from "./components/newfooter/NewFooter";
 import { ProSidebarProvider } from "react-pro-sidebar";
 //
+//
 function App() {
   return (
     <div>
