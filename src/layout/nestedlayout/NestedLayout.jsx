@@ -55,7 +55,7 @@ function NestedLayout({ children }) {
       ],
     },
     {
-      label: "Repository Penarafan",
+      label: "Penarafan Bandar Pintar",
       key: "6",
       icon: <BsStack />,
       children: [
