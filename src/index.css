@@ -19,6 +19,10 @@ body {
   --white: #fff;
   --gold-dark: #d6b035;
   --gold: #c1903b;
+  --yellow-dark:#FFB821;
+  --yellow-light: #F7BF4A;
+--red-light:#FF4B55;
+--red-lightest:#F76A72;
   --gold-light: #e0c468;
   --grey-dark: #9f9f9f;
   --grey-light: #bebebe;
@@ -42,4 +46,7 @@ h6,
 p,
 span {
   margin: 0px;
+}
+.icon{
+  color: var(--white);
 }

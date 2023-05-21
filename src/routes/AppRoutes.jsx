@@ -23,6 +23,8 @@ import Permohonan from "../screens/repositoryPenarafan/permohonanpenarafan/permo
 import PetiMasuk from "../screens/repositoryPenarafan/permohonanpenarafan/petimasuk/PetiMasuk";
 import StatusPermohonan from "../screens/repositoryPenarafan/permohonanpenarafan/statusPermohonan/StatusPermohonan";
 import ProfilePbt from "../screens/repositoryPenarafan/permohonanpenarafan/profilePbt/ProfilePbt";
+import AdminLayout from "../layout/adminlayout/AdminLayout";
+import AdminDashboard from "../screens/adminModule/dashboard/AdminDashboard";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -221,6 +223,15 @@ function AppRoutes() {
             <MainLayout>
               <HubungiKami />
             </MainLayout>
+          }
+        />
+        {/* ADMIN MODULE ROUTES */}
+        <Route
+          path="/admin"
+          element={
+            <AdminLayout>
+              <AdminDashboard />
+            </AdminLayout>
           }
         />
       </Routes>
