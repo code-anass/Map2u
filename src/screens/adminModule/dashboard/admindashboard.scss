@@ -90,7 +90,21 @@
   .table-data {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 10px;
-    min-height: 500px;
+    min-height: 300px;
+    th {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+    th > .bill {
+      width: 50px !important;
+    }
+    td {
+      text-align: center;
+      .td-span {
+        background-color: yellow;
+      }
+    }
   }
 }
 .bg-yel {
@@ -114,13 +128,14 @@
 .box-icon {
   font-size: 40px;
   color: var(--white);
+  cursor: pointer;
 }
 .bg1 {
-  color: #ffd4cb;
+  color: var(--orange-lts);
 }
 .bg2 {
-  color: #df9076;
+  color: var(--orange-lt);
 }
 .bg3 {
-  color: #ff764b;
+  color: var(--orange);
 }

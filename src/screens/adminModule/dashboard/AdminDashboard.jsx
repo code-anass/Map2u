@@ -1,20 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./admindashboard.scss";
+import AOS from "aos";
 import { HiOutlineUserCircle, HiOutlineCheckCircle } from "react-icons/hi";
 import { FiEdit } from "react-icons/fi";
 import Calendar from "react-calendar";
 import { TbOvalVerticalFilled } from "react-icons/tb";
 import Chart from "react-apexcharts";
 import AdminDashboardTable from "../../../components/Tables/AdminDashboardTable";
+import KemaskiniKelandarModal from "../../../components/modals/kemaskiniKelandar/KemaskiniKelandarModal";
 function AdminDashboard() {
   const [value, onChange] = useState(new Date());
+  const [kemShow, setKemShow] = useState(false);
   const options = {
     labels: ["Belum Semak", "Telah Disahkan"],
     colors: ["#DE1213", "#92EB91"],
   };
   const series = [55, 45];
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="admin-dashboard">
+    <div
+      className="admin-dashboard"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      {kemShow ? (
+        <KemaskiniKelandarModal show={kemShow} setShow={setKemShow} />
+      ) : null}
       <p>
         <b>DASHBOARD STATUS KEMASKINI</b>
       </p>
@@ -36,7 +50,7 @@ function AdminDashboard() {
                 <p className="head">Semak Baru</p>
               </div>
               <div className="rght bg-red-lts">
-                <FiEdit className="box-icon" />
+                <FiEdit className="box-icon" onClick={() => setKemShow(true)} />
               </div>
             </div>
             <div className="box">

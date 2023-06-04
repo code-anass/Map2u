@@ -25,6 +25,13 @@ import StatusPermohonan from "../screens/repositoryPenarafan/permohonanpenarafan
 import ProfilePbt from "../screens/repositoryPenarafan/permohonanpenarafan/profilePbt/ProfilePbt";
 import AdminLayout from "../layout/adminlayout/AdminLayout";
 import AdminDashboard from "../screens/adminModule/dashboard/AdminDashboard";
+import KemaskiniPemantauan from "../screens/adminModule/pengurusanModule/kemaskiniPemantauan/KemaskiniPemantauan";
+import CmsModule from "../screens/adminModule/pengurusanModule/cmsModule/CmsModule";
+import KemiskiniFormula from "../screens/adminModule/tetapanpemantauan/kemaskiniformula/KemaskiniFormula";
+import TetapanAgensi from "../screens/adminModule/tetapanpemantauan/tetapanagensi/TetapanAgensi";
+import Pengesahan from "../screens/adminModule/pengesahan/Pengesahan";
+import Rumusan from "../screens/adminModule/rumusan/Rumusan";
+import PengesahanPemanta from "../screens/adminModule/pengesahan/pengesahanpemantauan/PengesahanPemanta";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -231,6 +238,62 @@ function AppRoutes() {
           element={
             <AdminLayout>
               <AdminDashboard />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/kemaskini"
+          element={
+            <AdminLayout>
+              <KemaskiniPemantauan />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/cmsmodule"
+          element={
+            <AdminLayout>
+              <CmsModule />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/kemiskiniformula"
+          element={
+            <AdminLayout>
+              <KemiskiniFormula />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/tetapanagensi"
+          element={
+            <AdminLayout>
+              <TetapanAgensi />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/pengesahan"
+          element={
+            <AdminLayout>
+              <Pengesahan />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/rumusan"
+          element={
+            <AdminLayout>
+              <Rumusan />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/pengesahanpemant"
+          element={
+            <AdminLayout>
+              <PengesahanPemanta />
             </AdminLayout>
           }
         />

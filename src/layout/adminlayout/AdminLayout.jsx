@@ -25,7 +25,7 @@ function AdminLayout({ children }) {
         {
           label: "Dashboard Admin",
           key: "sb11",
-          link: "/",
+          link: "/admin",
         },
         {
           label: "Pengurusan Module",
@@ -35,10 +35,12 @@ function AdminLayout({ children }) {
             {
               label: "Kemaskini Pemantauan",
               key: "sb21",
+              link: "/admin/kemaskini",
             },
             {
               label: "CMS Modul",
               key: "sb22",
+              link: "/admin/cmsmodule",
             },
           ],
         },
@@ -50,22 +52,24 @@ function AdminLayout({ children }) {
             {
               label: "Kemaskini Formula",
               key: "sb31",
+              link: "/admin/kemiskiniformula",
             },
             {
               label: "Tetapan Agensi",
               key: "sb32",
+              link: "/admin/tetapanagensi",
             },
           ],
         },
         {
           label: "Pengesahan Pemantauan",
           key: "sb14",
-          link: "/",
+          link: "/admin/pengesahan",
         },
         {
           label: "Rumusan Pemantauan",
           key: "sb14",
-          link: "/",
+          link: "/admin/rumusan",
         },
       ],
     },

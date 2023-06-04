@@ -11,6 +11,7 @@ body {
 
 :root {
   --primary: #1c2857;
+  --primary-lt:#5B63C3;
   --blue: blue;
   --secondary: #0abb87;
   --cyan: #00cfd5;
@@ -36,6 +37,13 @@ body {
   --platinium: #8a8a8a;
   --red: red;
   --dark-voilet: #5500a1;
+  --table-head:#6b8a93;
+  --table-head-drk: #526f78;
+  --table-head-lt: #a4b2b7;
+  --orange:#F26D23;
+  --orange-lts:#ffd4cb;
+  --orange-lt:#df9076;
+  --green-new:#47C5AB;
 }
 h1,
 h2,
@@ -49,4 +57,7 @@ span {
 }
 .icon{
   color: var(--white);
+}
+.mt-5{
+  margin-top: 7px;
 }
