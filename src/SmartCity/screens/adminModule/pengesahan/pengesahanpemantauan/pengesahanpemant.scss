@@ -1,0 +1,73 @@
+.pengesahan-pemant {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  .main-h {
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .table-data {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid rgb(228, 224, 224);
+    margin-right: 10px;
+    border-radius: 5px;
+    min-height: 500px;
+    background-color: var(--white);
+    .input {
+      width: 300px;
+      margin-top: 5px;
+      padding: 7px 10px;
+      border: none;
+      background-color: lightgrey;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .p {
+      font-size: 12px;
+    }
+    .new-details {
+      margin-top: 20px;
+    }
+    .btns-info {
+      align-self: flex-end;
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+      .btn {
+        padding: 5px 10px;
+        background-color: var(--gold);
+        color: var(--white);
+        cursor: pointer;
+      }
+      .blue {
+        background-color: var(--primary-lt);
+      }
+    }
+    th {
+      background-color: var(--table-head);
+      color: var(--white);
+      text-align: center;
+    }
+    th > .bill {
+      width: 50px !important;
+    }
+    td {
+      text-align: center;
+      .td-span {
+        background-color: yellow;
+      }
+      .td-disahkan {
+        background-color: var(--green-new);
+        padding: 3px 6px;
+        border-radius: 10px;
+        color: var(--white);
+      }
+    }
+  }
+}

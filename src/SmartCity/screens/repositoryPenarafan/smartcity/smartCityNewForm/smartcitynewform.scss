@@ -1,0 +1,45 @@
+.smartcitynewform {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: var(--white);
+    h3 {
+      color: var(--blue);
+      font-size: 25px;
+      width: 300px;
+    }
+    button {
+      color: var(--white);
+      background-color: var(--secondary);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .form-data {
+    display: flex;
+    padding: 10px;
+    background-color: var(--white);
+    gap: 10px;
+
+    .left {
+      flex: 1.3;
+      padding: 10px;
+    }
+    .right {
+      flex: 1;
+      h3 {
+        color: var(--blue);
+      }
+    }
+  }
+}

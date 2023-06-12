@@ -1,0 +1,70 @@
+.msiso {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  padding: 20px;
+  color: var(--white);
+  .top-h {
+    text-align: center;
+    width: 100%;
+  }
+  .h3 {
+    color: var(--cyan);
+    text-align: center;
+  }
+  .msiso-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
+    .desc {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      gap: 10px;
+      .card {
+        width: 270px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        transition: all 150ms ease-in-out;
+        img {
+          width: 50px;
+          object-fit: contain;
+        }
+        p {
+          margin: 0px;
+          text-align: left;
+        }
+        span {
+          color: var(--cyan);
+        }
+        &:hover {
+          transform: scale(1.02);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .msiso {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    .msiso-desc {
+      flex-direction: column;
+      .desc {
+        grid-template-columns: repeat(1, 250px);
+      }
+    }
+  }
+}

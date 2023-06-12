@@ -1,0 +1,36 @@
+.tambah-modal {
+  display: flex;
+  flex-direction: column;
+
+  .top-header {
+    background-color: var(--table-head);
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    .btnCnl {
+      cursor: pointer;
+    }
+  }
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      .btn-kembali {
+        background-color: var(--gold);
+      }
+    }
+  }
+}
+.modalStyle .ant-modal-content {
+  padding: 0px;
+}

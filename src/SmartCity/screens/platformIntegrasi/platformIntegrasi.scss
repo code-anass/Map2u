@@ -1,0 +1,52 @@
+.platformIntegrasi {
+  background-image: url("../../assets/analitik/bg_profil.png");
+  background-size: cover;
+  min-height: 75vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  .main-heading {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .profiles {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 210px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background: rgba(21, 36, 61, 0.5);
+
+    .card {
+      width: 170px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 10px;
+      img {
+        width: 150px;
+        height: 150px;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+        padding: 10px;
+        object-fit: contain;
+      }
+      p {
+        text-align: center;
+        font-size: 11px;
+      }
+    }
+  }
+}

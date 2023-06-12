@@ -1,0 +1,39 @@
+.rplatarbelakang {
+  width: 100%;
+  background-color: var(--grey-lightest-x);
+
+  .content-rplatar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .main-h {
+      text-align: center;
+      padding-top: 20px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .main-h2 {
+      margin-top: 5px;
+      text-align: center;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .ltr-img {
+      margin: auto;
+      width: 80%;
+      object-fit: contain;
+    }
+    .desc {
+      width: 80%;
+      margin: auto;
+      background-color: var(--white);
+      p {
+        text-align: justify;
+        padding: 10px;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}

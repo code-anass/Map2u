@@ -1,0 +1,18 @@
+.mu-pilantindakan {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  .heading {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    color: var(--primary);
+  }
+  .content-pilan {
+    width: 95%;
+    background-color: var(--white);
+    margin: auto;
+    padding: 40px 0px;
+  }
+}

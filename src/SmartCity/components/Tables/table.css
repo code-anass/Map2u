@@ -1,0 +1,36 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  color: var(--blue);
+  font-size: 14px;
+}
+th input {
+  max-width: 100px;
+  border: 1px solid var(--grey-light);
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+td,
+th {
+  border: 1px solid rgb(189, 187, 187);
+  text-align: left;
+  padding: 5px;
+}
+td {
+  font-size: 12px;
+}
+tr:nth-child(even) {
+  /* background-color: #dddddd; */
+}
+table .icon {
+  color: var(--blue);
+  font-size: 17px;
+  cursor: pointer;
+}
+.ant-select-item-option-content {
+  white-space: normal !important;
+}
