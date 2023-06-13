@@ -13,32 +13,41 @@ import Sidebar from "components/muo/sidebar/Sidebar";
 import Main from "./routes/Main";
 import Login from "./MUO/pages/Auth/Login/Login";
 import Register from "./MUO/pages/Auth/Register/Register";
+// Redux
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import configureStore from "store";
 
 function App() {
   const [isAuth, setIsAuth] = useState(true);
   const [isSmartCity, setIsSmartCity] = useState(false);
+  const {persistor, store} = configureStore();
 
   return (
     <>
-      {isAuth ? (
-        <div>
-          <Navbar />
-          <Sidebar />
-          <main id="main" className="main">
-            <Main />
-          </main>
-        </div>
-      ) : isSmartCity ? (
-        <ProSidebarProvider>
-          <SmartCity />
-        </ProSidebarProvider>
-      ) : (
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      )}
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          {isAuth ? (
+            <div>
+              <Navbar />
+              <Sidebar />
+              <main id="main" className="main">
+                <Main />
+              </main>
+            </div>
+          ) : isSmartCity ? (
+            <ProSidebarProvider>
+              <SmartCity />
+            </ProSidebarProvider>
+          ) : (
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Routes>
+          )}
+        </PersistGate>
+      </Provider>
     </>
   );
 }
