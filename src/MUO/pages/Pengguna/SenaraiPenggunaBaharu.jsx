@@ -3,7 +3,7 @@ import Badge from 'react-bootstrap/Badge';
 import DataTable from "react-data-table-component";
 import HeaderPengguna from "../../components/HeaderContent/HeaderPengguna";
 import FooterContent from "../../components/FooterContent/FooterContent";
-import AngleSvg from "../../assets/images/bg-angles.svg";
+import AngleSvg from "assets/images/bg-angles.svg";
 
 const SenaraiPenggunaBaharu = () => {
   const viewUser = (id) => {

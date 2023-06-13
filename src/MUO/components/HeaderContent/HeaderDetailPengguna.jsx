@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-// import { ReactComponent as MarketingSvg } from "../../assets/images/marketing-animate.svg";
-import profile from "../../assets/images/profile.png";
+// import { ReactComponent as MarketingSvg } from "assets/images/marketing-animate.svg";
+import profile from "assets/images/profile.png";
 
 const HeaderDetailPengguna = ({ title, titleBreadcrumb, subtitle }) => {
   return (

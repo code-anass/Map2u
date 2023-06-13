@@ -4,10 +4,10 @@ import { ProSidebarProvider } from "react-pro-sidebar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
-import "./MUO/assets/boxicons/css/boxicons.min.css";
-import "./MUO/assets/remixicon/remixicon.css";
-import "./MUO/assets/bootstrap-icons/bootstrap-icons.css";
-import "./MUO/assets/bootstrap/css/bootstrap.min.css";
+import "assets/boxicons/css/boxicons.min.css";
+import "assets/remixicon/remixicon.css";
+import "assets/bootstrap-icons/bootstrap-icons.css";
+import "assets/bootstrap/css/bootstrap.min.css";
 import Navbar from "./MUO/components/navbar/Navbar";
 import Sidebar from "./MUO/components/sidebar/Sidebar";
 import Main from "./routes/Main";

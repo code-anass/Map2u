@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
-import Background from "../../assets/images/Background.png";
+import Background from "assets/images/Background.png";
 
 const HeaderContent = ({ title, titleBreadcrumb, subtitle }) => {
   return (

@@ -1,15 +1,15 @@
 import React from "react";
 import "../../pages/ModulUtama/ModulUtama.css"
 import FooterContent from "../../components/FooterContent/FooterContent";
-import AngleSvg from "../../assets/images/bg-angles.svg";
+import AngleSvg from "assets/images/bg-angles.svg";
 import HeaderMenu from "../../components/HeaderContent/HeaderMenu";
-import ImgAnalisis from "../../assets/images/menu/penyelidikan/data-points-animate.png";
-import ImgLyerList from "../../assets/images/menu/sokongan/all-the-data-folder-blue-animate.png";
-import ImgCriteria from "../../assets/images/menu/sokongan/critical-thinking-animate.png";
-import ImgRating from "../../assets/images/menu/sokongan/preferences-animate.png";
-import ImgFormula from "../../assets/images/menu/sokongan/mathematics-animate.png";
-import ImgReporting from "../../assets/images/menu/sokongan/data-report-animate.png";
-import ImgResults from "../../assets/images/menu/sokongan/analytivs-animate.png";
+import ImgAnalisis from "assets/images/menu/penyelidikan/data-points-animate.png";
+import ImgLyerList from "assets/images/menu/sokongan/all-the-data-folder-blue-animate.png";
+import ImgCriteria from "assets/images/menu/sokongan/critical-thinking-animate.png";
+import ImgRating from "assets/images/menu/sokongan/preferences-animate.png";
+import ImgFormula from "assets/images/menu/sokongan/mathematics-animate.png";
+import ImgReporting from "assets/images/menu/sokongan/data-report-animate.png";
+import ImgResults from "assets/images/menu/sokongan/analytivs-animate.png";
 const MenuSokongan = () => {
 
     return (

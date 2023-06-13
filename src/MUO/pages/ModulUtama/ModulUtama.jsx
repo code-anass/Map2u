@@ -3,15 +3,15 @@ import Badge from 'react-bootstrap/Badge';
 import { NavLink, Link } from "react-router-dom";
 import "./ModulUtama.css"
 import FooterContent from "../../components/FooterContent/FooterContent";
-import AngleSvg from "../../assets/images/bg-angles.svg";
+import AngleSvg from "assets/images/bg-angles.svg";
 import HeaderContent from "../../components/HeaderContent/HeaderContent";
-import ImgPemantauan from "../../assets/images/Modulutama/malaysia-kuala-lumpur-timelapse-road-buildings-sunset-sky-clouds-city-7025.jpg";
-import ImgGeoHub from "../../assets/images/Modulutama/gis.jpg";
-import ImgUO from "../../assets/images/Modulutama/uo-bg.jpg";
-import ImgMaklumatBandar from "../../assets/images/Modulutama/wall1.jpg";
-import ImgRnD from "../../assets/images/Modulutama/putrajaya1.png";
-import ImgSokongan from "../../assets/images/Modulutama/11.-Putrajaya-PPT-Design-LAAB-Series.jpg";
-import ImgBandarPintar from "../../assets/images/Modulutama/Smart-City-700x467.png";
+import ImgPemantauan from "assets/images/Modulutama/malaysia-kuala-lumpur-timelapse-road-buildings-sunset-sky-clouds-city-7025.jpg";
+import ImgGeoHub from "assets/images/Modulutama/gis.jpg";
+import ImgUO from "assets/images/Modulutama/uo-bg.jpg";
+import ImgMaklumatBandar from "assets/images/Modulutama/wall1.jpg";
+import ImgRnD from "assets/images/Modulutama/putrajaya1.png";
+import ImgSokongan from "assets/images/Modulutama/11.-Putrajaya-PPT-Design-LAAB-Series.jpg";
+import ImgBandarPintar from "assets/images/Modulutama/Smart-City-700x467.png";
 
 const ModulUtama = () => {
 

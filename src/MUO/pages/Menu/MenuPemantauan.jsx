@@ -2,18 +2,18 @@ import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import "../../pages/ModulUtama/ModulUtama.css"
 import FooterContent from "../../components/FooterContent/FooterContent";
-import AngleSvg from "../../assets/images/bg-angles.svg";
+import AngleSvg from "assets/images/bg-angles.svg";
 import HeaderMenu from "../../components/HeaderContent/HeaderMenu";
-import ImgSDG from "../../assets/images/menu/pemantauan/sdg1.jpg";
-import ImgNUA from "../../assets/images/menu/pemantauan/nua.png";
-import ImgRFN from "../../assets/images/menu/pemantauan/rfn.png";
-import ImgDPN from "../../assets/images/menu/pemantauan/dpn.png";
-import ImgDPFDN from "../../assets/images/menu/pemantauan/dpfdn.jpg";
-import ImgRFZPPN from "../../assets/images/menu/pemantauan/rfzppn.png";
-import ImgCFS from "../../assets/images/menu/pemantauan/8.jpg";
-import ImgIKP from "../../assets/images/menu/pemantauan/national.jpg";
-import ImgRP from "../../assets/images/menu/pemantauan/4.jpg";
-import ImgDashboard from "../../assets/images/menu/pemantauan/analytic.jpg";
+import ImgSDG from "assets/images/menu/pemantauan/sdg1.jpg";
+import ImgNUA from "assets/images/menu/pemantauan/nua.png";
+import ImgRFN from "assets/images/menu/pemantauan/rfn.png";
+import ImgDPN from "assets/images/menu/pemantauan/dpn.png";
+import ImgDPFDN from "assets/images/menu/pemantauan/dpfdn.jpg";
+import ImgRFZPPN from "assets/images/menu/pemantauan/rfzppn.png";
+import ImgCFS from "assets/images/menu/pemantauan/8.jpg";
+import ImgIKP from "assets/images/menu/pemantauan/national.jpg";
+import ImgRP from "assets/images/menu/pemantauan/4.jpg";
+import ImgDashboard from "assets/images/menu/pemantauan/analytic.jpg";
 
 const MenuPemantauan = () => {
 

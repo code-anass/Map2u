@@ -1,19 +1,19 @@
 import React from "react";
 import FooterContent from "../../../components/FooterContent/FooterContent";
-import AngleSvg from "../../../assets/images/bg-angles.svg";
+import AngleSvg from "assets/images/bg-angles.svg";
 import HeaderContent from "../../../components/HeaderContent/HeaderContent";
-import ImgSetData from "../../../assets/images/menu/datarepositori/all-the-data-folder-blue-animate.png";
-import ImgPentadbiran from "../../../assets/images/menu/datarepositori/World-amico.png";
-import ImgGunaTanah from "../../../assets/images/menu/datarepositori/Empty street-amico.png";
-import ImgDemografi from "../../../assets/images/menu/datarepositori/Team spirit-bro.png";
-import ImgEkonomi from "../../../assets/images/menu/datarepositori/Finance-rafiki.png";
-import ImgSosial from "../../../assets/images/menu/datarepositori/Life in a city-rafiki.png";
-import ImgInfra from "../../../assets/images/menu/datarepositori/Life in a city-amico.png";
-import ImgPengangkutan from "../../../assets/images/menu/datarepositori/Train-amico.png";
-import ImgAlam from "../../../assets/images/menu/datarepositori/Water drop-bro.png";
-import ImgUrusTadbir from "../../../assets/images/menu/datarepositori/Audit-amico.png";
-import ImgDataAnalisis from "../../../assets/images/menu/datarepositori/Analyze-bro.png";
-import ImgLain from "../../../assets/images/menu/datarepositori/Navigation-amico.png";
+import ImgSetData from "assets/images/menu/datarepositori/all-the-data-folder-blue-animate.png";
+import ImgPentadbiran from "assets/images/menu/datarepositori/World-amico.png";
+import ImgGunaTanah from "assets/images/menu/datarepositori/Empty street-amico.png";
+import ImgDemografi from "assets/images/menu/datarepositori/Team spirit-bro.png";
+import ImgEkonomi from "assets/images/menu/datarepositori/Finance-rafiki.png";
+import ImgSosial from "assets/images/menu/datarepositori/Life in a city-rafiki.png";
+import ImgInfra from "assets/images/menu/datarepositori/Life in a city-amico.png";
+import ImgPengangkutan from "assets/images/menu/datarepositori/Train-amico.png";
+import ImgAlam from "assets/images/menu/datarepositori/Water drop-bro.png";
+import ImgUrusTadbir from "assets/images/menu/datarepositori/Audit-amico.png";
+import ImgDataAnalisis from "assets/images/menu/datarepositori/Analyze-bro.png";
+import ImgLain from "assets/images/menu/datarepositori/Navigation-amico.png";
 
 
 const DataRepositori = () => {
