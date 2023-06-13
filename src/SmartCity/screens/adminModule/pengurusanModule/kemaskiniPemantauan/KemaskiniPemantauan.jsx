@@ -1,6 +1,6 @@
 import AOS from "aos";
 import React, { useEffect } from "react";
-import KemaskiniTable from "../../../../components/Tables/KemaskiniTable";
+import KemaskiniTable from "components/smartCity/Tables/KemaskiniTable";
 import "./kemaskini.scss";
 function KemaskiniPemantauan() {
   useEffect(() => {

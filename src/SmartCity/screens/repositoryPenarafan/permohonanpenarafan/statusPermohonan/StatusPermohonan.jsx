@@ -4,7 +4,7 @@ import AOS from "aos";
 import permohonan from "assets/repositoryPenarafan/permohan/permohonan.png";
 
 import { useNavigate } from "react-router-dom";
-import StatusPermohonanTable from "../../../../components/Tables/StatusPermohonanTable";
+import StatusPermohonanTable from "components/smartCity/Tables/StatusPermohonanTable";
 function StatusPermohonan() {
   const navigate = useNavigate();
   useEffect(() => {

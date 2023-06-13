@@ -1,7 +1,7 @@
 import { Select } from "antd";
 import AOS from "aos";
 import React, { useEffect } from "react";
-import RumusanTable from "../../../components/Tables/RumusanTable";
+import RumusanTable from "components/smartCity/Tables/RumusanTable";
 import "./rumusan.scss";
 function Rumusan() {
   const agensi = [

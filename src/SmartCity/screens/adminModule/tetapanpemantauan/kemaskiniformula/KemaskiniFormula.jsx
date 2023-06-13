@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import KemaskiniFormulaTable from "../../../../components/Tables/KemaskiniFormulaTable";
+import KemaskiniFormulaTable from "components/smartCity/Tables/KemaskiniFormulaTable";
 import "./kemaskiniformula.scss";
 import AOS from "aos";
 function KemiskiniFormula() {

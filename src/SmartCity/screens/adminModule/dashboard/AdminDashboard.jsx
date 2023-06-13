@@ -6,8 +6,8 @@ import { FiEdit } from "react-icons/fi";
 import Calendar from "react-calendar";
 import { TbOvalVerticalFilled } from "react-icons/tb";
 import Chart from "react-apexcharts";
-import AdminDashboardTable from "../../../components/Tables/AdminDashboardTable";
-import KemaskiniKelandarModal from "../../../components/modals/kemaskiniKelandar/KemaskiniKelandarModal";
+import AdminDashboardTable from "components/smartCity/Tables/AdminDashboardTable";
+import KemaskiniKelandarModal from "components/smartCity/modals/kemaskiniKelandar/KemaskiniKelandarModal";
 function AdminDashboard() {
   const [value, onChange] = useState(new Date());
   const [kemShow, setKemShow] = useState(false);

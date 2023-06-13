@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./pengesahan.scss";
 import { VscListFlat } from "react-icons/vsc";
 import { Select } from "antd";
-import PengesahanTable from "../../../components/Tables/PengesahanTable";
+import PengesahanTable from "components/smartCity/Tables/PengesahanTable";
 import AOS from "aos";
 function Pengesahan() {
   const agensi = [

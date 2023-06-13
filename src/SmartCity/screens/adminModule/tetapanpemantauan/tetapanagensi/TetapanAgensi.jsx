@@ -1,6 +1,6 @@
 import AOS from "aos";
 import React, { useEffect } from "react";
-import KemaskiniFormulaTable from "../../../../components/Tables/KemaskiniFormulaTable";
+import KemaskiniFormulaTable from "components/smartCity/Tables/KemaskiniFormulaTable";
 import "./tetapanagensi.scss";
 function TetapanAgensi() {
   useEffect(() => {

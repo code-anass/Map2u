@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./cmsmodule.scss";
 import { AiFillPlusCircle } from "react-icons/ai";
-import CmsModuleTable from "../../../../components/Tables/CmsModuleTable";
-import TambahModal from "../../../../components/modals/tambahmodal/TambahModal";
+import CmsModuleTable from "components/smartCity/Tables/CmsModuleTable";
+import TambahModal from "components/smartCity/modals/tambahmodal/TambahModal";
 import AOS from "aos";
 function CmsModule() {
   const [show, setShow] = useState(false);

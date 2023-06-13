@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./statuspencapaian.scss";
 import AOS from "aos";
-import SimpleMap from "../../../components/map/simpleMap/SimpleMap";
-import MapContainer from "../../../components/map/currentlocation/CurrentLocation";
+import SimpleMap from "components/smartCity/map/simpleMap/SimpleMap";
+import MapContainer from "components/smartCity/map/currentlocation/CurrentLocation";
 import gold from "assets/repositoryPenarafan/gold.png";
 import bronz from "assets/repositoryPenarafan/bronz.png";
 import platinium from "assets/repositoryPenarafan/platinium.png";

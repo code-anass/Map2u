@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import React, { useEffect } from "react";
 import "./pengesahanpemant.scss";
 import AOS from "aos";
-import PengesahanPemantTable from "../../../../components/Tables/PengesahanPemantTable";
+import PengesahanPemantTable from "components/smartCity/Tables/PengesahanPemantTable";
 function PengesahanPemanta() {
   useEffect(() => {
     AOS.init();
