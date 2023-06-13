@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./prosespenarafan.scss";
 import { RiFileList3Line } from "react-icons/ri";
 import { HiOutlineBuildingOffice2, HiOutlineWifi } from "react-icons/hi2";
-import iso from "../../../../assets/repositoryPenarafan/process/iso.png";
-import smartcity from "../../../../assets/repositoryPenarafan/process/smartcity.png";
+import iso from "../assets/repositoryPenarafan/process/iso.png";
+import smartcity from "../assets/repositoryPenarafan/process/smartcity.png";
 import AOS from "aos";
-import thumbnail_smartcity from "../../../../assets/repositoryPenarafan/process/thumbnail_smartcity.png";
+import thumbnail_smartcity from "../assets/repositoryPenarafan/process/thumbnail_smartcity.png";
 import ProsesModal from "./ProsesModel/ProsesModel";
 function ProsesPenarafan() {
   const [show, setShow] = useState(false);

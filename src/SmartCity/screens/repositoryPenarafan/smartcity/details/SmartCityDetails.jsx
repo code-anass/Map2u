@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./smartcitydetails.scss";
-import pengurusan from "../../../../assets/repositoryPenarafan/pengurusan.png";
+import pengurusan from "../assets/repositoryPenarafan/pengurusan.png";
 import { Button } from "antd";
 import AOS from "aos";
 function SmartCityDetails() {

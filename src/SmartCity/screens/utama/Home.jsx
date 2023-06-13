@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./home.scss";
-import home from "../../assets/utama/bg_main.png";
+import home from "assets/utama/bg_main.png";
 import AOS from "aos";
 function Home() {
   useEffect(() => {

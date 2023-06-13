@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import "./latarBelakang.scss";
 import AOS from "aos";
 // imgs section
-import about from "../../assets/latarBelakang/about.png";
-import img1 from "../../assets/latarBelakang/img1.png";
-import img2 from "../../assets/latarBelakang/img2.png";
-import img3 from "../../assets/latarBelakang/img3.png";
-import img4 from "../../assets/latarBelakang/img4.png";
-import Dewan from "../../assets/latarBelakang/authorities/Dewan.png";
-import JohorBahru from "../../assets/latarBelakang/authorities/JohorBahru.png";
-import PetalingJaya from "../../assets/latarBelakang/authorities/PetalingJaya.png";
-import PerbandaranKulim from "../../assets/latarBelakang/authorities/PerbandaranKulim.png";
-import Perbadanan from "../../assets/latarBelakang/authorities/Perbadanan.png";
-import PulauPinang from "../../assets/latarBelakang/authorities/PulauPinang.png";
+import about from "assets/latarBelakang/about.png";
+import img1 from "assets/latarBelakang/img1.png";
+import img2 from "assets/latarBelakang/img2.png";
+import img3 from "assets/latarBelakang/img3.png";
+import img4 from "assets/latarBelakang/img4.png";
+import Dewan from "assets/latarBelakang/authorities/Dewan.png";
+import JohorBahru from "assets/latarBelakang/authorities/JohorBahru.png";
+import PetalingJaya from "assets/latarBelakang/authorities/PetalingJaya.png";
+import PerbandaranKulim from "assets/latarBelakang/authorities/PerbandaranKulim.png";
+import Perbadanan from "assets/latarBelakang/authorities/Perbadanan.png";
+import PulauPinang from "assets/latarBelakang/authorities/PulauPinang.png";
 //end of imgs
 function LatarBelakang() {
   useEffect(() => {

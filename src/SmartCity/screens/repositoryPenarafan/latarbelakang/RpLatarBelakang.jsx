@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./rplatarbelakang.scss";
 import AOS from "aos";
-import about from "../../../assets/latarBelakang/about.png";
+import about from "assets/latarBelakang/about.png";
 function RpLatarBelakang() {
   useEffect(() => {
     AOS.init();

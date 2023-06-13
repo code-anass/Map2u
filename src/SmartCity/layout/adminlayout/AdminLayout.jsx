@@ -4,8 +4,8 @@ import { MdDashboard } from "react-icons/md";
 import { useNavigate, Link } from "react-router-dom";
 import { RiProfileLine } from "react-icons/ri";
 import { HiOutlineBell } from "react-icons/hi";
-import MUO from "../../assets/logo/MUO.png";
-import mainlogo from "../../assets/logo/mainlogo.png";
+import MUO from "assets/logo/MUO.png";
+import mainlogo from "assets/logo/mainlogo.png";
 import {
   Sidebar,
   Menu,

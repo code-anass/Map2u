@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./topbar.scss";
-import MUO from "../../assets/logo/MUO.png";
-import secondlogo from "../../assets/logo/secondlogo.png";
+import MUO from "assets/logo/MUO.png";
+import secondlogo from "assets/logo/secondlogo.png";
 import { DownOutlined, SettingOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import { useNavigate } from "react-router-dom";

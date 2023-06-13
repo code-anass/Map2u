@@ -3,10 +3,10 @@ import "./statuspencapaian.scss";
 import AOS from "aos";
 import SimpleMap from "../../../components/map/simpleMap/SimpleMap";
 import MapContainer from "../../../components/map/currentlocation/CurrentLocation";
-import gold from "../../../assets/repositoryPenarafan/gold.png";
-import bronz from "../../../assets/repositoryPenarafan/bronz.png";
-import platinium from "../../../assets/repositoryPenarafan/platinium.png";
-import silver from "../../../assets/repositoryPenarafan/silver.png";
+import gold from "assets/repositoryPenarafan/gold.png";
+import bronz from "assets/repositoryPenarafan/bronz.png";
+import platinium from "assets/repositoryPenarafan/platinium.png";
+import silver from "assets/repositoryPenarafan/silver.png";
 function StatusPencapain() {
   const [currentPosition, setCurrentPosition] = useState({});
   useEffect(() => {

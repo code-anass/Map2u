@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./pengurusan.scss";
 import AOS from "aos";
-import pengurusan from "../../../assets/repositoryPenarafan/pengurusan.png";
+import pengurusan from "assets/repositoryPenarafan/pengurusan.png";
 import PengurusanTable from "../../../components/Tables/PengurusanTable";
 import { useNavigate } from "react-router-dom";
 function PengurusanPenarafan() {

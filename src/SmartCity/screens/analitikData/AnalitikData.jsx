@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./analitikData.scss";
 import AOS from "aos";
-import governance from "../../assets/analitik/governance.jpg";
-import huni from "../../assets/analitik/huni.jpg";
-import tea from "../../assets/analitik/tea.jpg";
-import social from "../../assets/analitik/social.jpg";
-import economy from "../../assets/analitik/economy.jpg";
-import people from "../../assets/analitik/people.jpg";
-import physical from "../../assets/analitik/physical.jpg";
+import governance from "assets/analitik/governance.jpg";
+import huni from "assets/analitik/huni.jpg";
+import tea from "assets/analitik/tea.jpg";
+import social from "assets/analitik/social.jpg";
+import economy from "assets/analitik/economy.jpg";
+import people from "assets/analitik/people.jpg";
+import physical from "assets/analitik/physical.jpg";
 function AnalitikData() {
   useEffect(() => {
     AOS.init();

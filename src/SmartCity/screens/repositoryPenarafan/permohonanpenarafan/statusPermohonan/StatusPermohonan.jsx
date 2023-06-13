@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./statuspermohonan.scss";
 import AOS from "aos";
-import permohonan from "../../../../assets/repositoryPenarafan/permohan/permohonan.png";
+import permohonan from "../assets/repositoryPenarafan/permohan/permohonan.png";
 
 import { useNavigate } from "react-router-dom";
 import StatusPermohonanTable from "../../../../components/Tables/StatusPermohonanTable";

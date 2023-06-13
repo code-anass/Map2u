@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./smartcitynewform.scss";
 import AOS from "aos";
-import pengurusan from "../../../../assets/repositoryPenarafan/pengurusan.png";
+import pengurusan from "../assets/repositoryPenarafan/pengurusan.png";
 import {
   Button,
   Checkbox,

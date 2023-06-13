@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./platformIntegrasi.scss";
 import AOS from "aos";
-import Dewan from "../../assets/latarBelakang/authorities/Dewan.png";
-import JohorBahru from "../../assets/latarBelakang/authorities/JohorBahru.png";
-import PetalingJaya from "../../assets/latarBelakang/authorities/PetalingJaya.png";
-import PerbandaranKulim from "../../assets/latarBelakang/authorities/PerbandaranKulim.png";
-import Perbadanan from "../../assets/latarBelakang/authorities/Perbadanan.png";
-import PulauPinang from "../../assets/latarBelakang/authorities/PulauPinang.png";
+import Dewan from "assets/latarBelakang/authorities/Dewan.png";
+import JohorBahru from "assets/latarBelakang/authorities/JohorBahru.png";
+import PetalingJaya from "assets/latarBelakang/authorities/PetalingJaya.png";
+import PerbandaranKulim from "assets/latarBelakang/authorities/PerbandaranKulim.png";
+import Perbadanan from "assets/latarBelakang/authorities/Perbadanan.png";
+import PulauPinang from "assets/latarBelakang/authorities/PulauPinang.png";
 function PlatformIntegrasi() {
   useEffect(() => {
     AOS.init();

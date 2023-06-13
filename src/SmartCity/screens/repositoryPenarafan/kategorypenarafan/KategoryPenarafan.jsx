@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./kategoryPenarafan.scss";
 import AOS from "aos";
-import bronz from "../../../assets/repositoryPenarafan/bronz.png";
-import silver from "../../../assets/repositoryPenarafan/silver.png";
-import gold from "../../../assets/repositoryPenarafan/gold.png";
-import platinium from "../../../assets/repositoryPenarafan/platinium.png";
+import bronz from "assets/repositoryPenarafan/bronz.png";
+import silver from "assets/repositoryPenarafan/silver.png";
+import gold from "assets/repositoryPenarafan/gold.png";
+import platinium from "assets/repositoryPenarafan/platinium.png";
 function KategoryPenarafan() {
   useEffect(() => {
     AOS.init();

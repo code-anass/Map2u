@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./profileBandar.scss";
 import AOS from "aos";
-import img1 from "../../assets/profileBindar/img1.png";
-import img2 from "../../assets/profileBindar/img2.png";
-import img3 from "../../assets/profileBindar/img3.png";
-import img4 from "../../assets/profileBindar/img4.png";
+import img1 from "assets/profileBindar/img1.png";
+import img2 from "assets/profileBindar/img2.png";
+import img3 from "assets/profileBindar/img3.png";
+import img4 from "assets/profileBindar/img4.png";
 function ProfileBandar() {
   useEffect(() => {
     AOS.init();

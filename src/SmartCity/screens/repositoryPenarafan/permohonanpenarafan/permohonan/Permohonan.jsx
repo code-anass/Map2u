@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import permohonan from "../../../../assets/repositoryPenarafan/permohan/permohonan.png";
+import permohonan from "../assets/repositoryPenarafan/permohan/permohonan.png";
 import "./permohonan.scss";
 import AOS from "aos";
 import Step1 from "./content/step1/Step1";

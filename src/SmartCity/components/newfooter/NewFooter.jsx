@@ -1,8 +1,8 @@
 import React from "react";
 import "./newfooter.scss";
-import contact from "../../assets/newfooter/contact.png";
-import apple from "../../assets/newfooter/apple_store.png";
-import google from "../../assets/newfooter/google_play.png";
+import contact from "assets/newfooter/contact.png";
+import apple from "assets/newfooter/apple_store.png";
+import google from "assets/newfooter/google_play.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsTwitter, BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
 function NewFooter() {

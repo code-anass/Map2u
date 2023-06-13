@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./newnavbar.css";
-import MUO from "../../assets/logo/MUO.png";
-import secondlogo from "../../assets/logo/secondlogo.png";
+import MUO from "assets/logo/MUO.png";
+import secondlogo from "assets/logo/secondlogo.png";
 import { NavLink } from "react-router-dom";
 import { FaWheelchair } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";

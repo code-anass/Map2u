@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./hubungi.scss";
 import AOS from "aos";
-import hubungi from "../../assets/hubungiKami/hubungi.png";
-import contact from "../../assets/hubungiKami/contact.png";
+import hubungi from "assets/hubungiKami/hubungi.png";
+import contact from "assets/hubungiKami/contact.png";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { HiUser } from "react-icons/hi";
