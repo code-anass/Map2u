@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./puncakuasa.scss";
-import book from "../../../../../assets/repositoryPenarafan/latar/book.png";
-import phase1 from "../../../../../assets/repositoryPenarafan/latar/phase1.png";
-import phase2 from "../../../../../assets/repositoryPenarafan/latar/phase2.png";
-import phase3 from "../../../../../assets/repositoryPenarafan/latar/phase3.png";
+import book from "assets/repositoryPenarafan/latar/book.png";
+import phase1 from "assets/repositoryPenarafan/latar/phase1.png";
+import phase2 from "assets/repositoryPenarafan/latar/phase2.png";
+import phase3 from "assets/repositoryPenarafan/latar/phase3.png";
 import AOS from "aos";
 function PuncaKuasa() {
   useEffect(() => {

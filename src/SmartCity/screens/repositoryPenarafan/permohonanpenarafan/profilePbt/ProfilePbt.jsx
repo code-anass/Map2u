@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Row, Col, Form, Input, Button, Select } from "antd";
 import MapContainer from "../../../../components/map/currentlocation/CurrentLocation";
 import { useNavigate } from "react-router-dom";
-import permohonan from "../../../../../assets/repositoryPenarafan/permohan/permohonan.png";
+import permohonan from "assets/repositoryPenarafan/permohan/permohonan.png";
 import "./profilePbt.scss";
 import AOS from "aos";
 function ProfilePbt() {
