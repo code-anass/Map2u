@@ -1,8 +1,8 @@
 import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import DataTable from "react-data-table-component";
-import HeaderDetailPengguna from "../../components/HeaderContent/HeaderDetailPengguna";
-import FooterContent from "../../components/FooterContent/FooterContent";
+import HeaderDetailPengguna from "components/muo/HeaderContent/HeaderDetailPengguna";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
 
 const TambahPengguna = () => {

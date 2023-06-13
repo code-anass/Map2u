@@ -1,8 +1,8 @@
 import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import DataTable from "react-data-table-component";
-import HeaderContent from "../../components/HeaderContent/HeaderContent";
-import FooterContent from "../../components/FooterContent/FooterContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
 import { useNavigate } from "react-router-dom";
 

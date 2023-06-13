@@ -2,8 +2,8 @@ import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import DataTable from "react-data-table-component";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderContent from "../../components/HeaderContent/HeaderContent";
-import FooterContent from "../../components/FooterContent/FooterContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 
 const tetapanBerita = () => {
     const viewUser = (id) => {

@@ -1,7 +1,7 @@
 import React from "react";
-import FooterContent from "../../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderContent from "../../../components/HeaderContent/HeaderContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
 import ImgSetData from "assets/images/menu/datarepositori/all-the-data-folder-blue-animate.png";
 import ImgPentadbiran from "assets/images/menu/datarepositori/World-amico.png";
 import ImgGunaTanah from "assets/images/menu/datarepositori/Empty street-amico.png";

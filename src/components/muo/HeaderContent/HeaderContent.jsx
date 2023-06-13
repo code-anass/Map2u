@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import Breadcrumb from "components/muo/Breadcrumb/Breadcrumb";
 import direct from "assets/images/direct_map2.png";
 
 const HeaderContent = ({ title, titleBreadcrumb, subtitle }) => {

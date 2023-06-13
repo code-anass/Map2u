@@ -1,9 +1,9 @@
 import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import "../../pages/ModulUtama/ModulUtama.css"
-import FooterContent from "../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderMenu from "../../components/HeaderContent/HeaderMenu";
+import HeaderMenu from "components/muo/HeaderContent/HeaderMenu";
 import ImgSDG from "assets/images/menu/pemantauan/sdg1.jpg";
 import ImgNUA from "assets/images/menu/pemantauan/nua.png";
 import ImgRFN from "assets/images/menu/pemantauan/rfn.png";

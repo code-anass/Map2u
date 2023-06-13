@@ -1,7 +1,7 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import HeaderContent from "../../components/HeaderContent/HeaderContent";
-import FooterContent from "../../components/FooterContent/FooterContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 
 const Dashboard = () => {
   return (

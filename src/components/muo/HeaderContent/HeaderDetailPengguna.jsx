@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import Breadcrumb from "components/muo/Breadcrumb/Breadcrumb";
 // import { ReactComponent as MarketingSvg } from "assets/images/marketing-animate.svg";
 import profile from "assets/images/profile.png";
 

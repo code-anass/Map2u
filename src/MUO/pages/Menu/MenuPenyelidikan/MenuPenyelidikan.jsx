@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import FooterContent from "../../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderMenu from "../../../components/HeaderContent/HeaderMenu";
+import HeaderMenu from "components/muo/HeaderContent/HeaderMenu";
 import ImgAnalisis from "assets/images/menu/penyelidikan/data-points-animate.png";
 import ImgInptPakar from "assets/images/menu/penyelidikan/digital-presentation-animate.png";
 import ImgDataRepositori from "assets/images/menu/penyelidikan/floppy-disk-animate.png";

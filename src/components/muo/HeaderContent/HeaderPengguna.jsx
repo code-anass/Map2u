@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import Breadcrumb from "components/muo/Breadcrumb/Breadcrumb";
 import profile from "assets/images/profile.png";
 import WaveSvg from "assets/images/bg-waves.svg";
 

@@ -2,9 +2,9 @@ import React from "react";
 import Badge from 'react-bootstrap/Badge';
 import { NavLink, Link } from "react-router-dom";
 import "./ModulUtama.css"
-import FooterContent from "../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderContent from "../../components/HeaderContent/HeaderContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
 import ImgPemantauan from "assets/images/Modulutama/malaysia-kuala-lumpur-timelapse-road-buildings-sunset-sky-clouds-city-7025.jpg";
 import ImgGeoHub from "assets/images/Modulutama/gis.jpg";
 import ImgUO from "assets/images/Modulutama/uo-bg.jpg";

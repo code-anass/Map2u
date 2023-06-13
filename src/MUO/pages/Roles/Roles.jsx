@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderContent from "../../components/HeaderContent/HeaderContent";
+import HeaderContent from "components/muo/HeaderContent/HeaderContent";
 import DataTable from "react-data-table-component";
-import FooterContent from "../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 
 const Roles = () => {
   const updateRole = (id) => {

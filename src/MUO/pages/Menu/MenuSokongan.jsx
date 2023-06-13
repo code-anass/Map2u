@@ -1,8 +1,8 @@
 import React from "react";
 import "../../pages/ModulUtama/ModulUtama.css"
-import FooterContent from "../../components/FooterContent/FooterContent";
+import FooterContent from "components/muo/FooterContent/FooterContent";
 import AngleSvg from "assets/images/bg-angles.svg";
-import HeaderMenu from "../../components/HeaderContent/HeaderMenu";
+import HeaderMenu from "components/muo/HeaderContent/HeaderMenu";
 import ImgAnalisis from "assets/images/menu/penyelidikan/data-points-animate.png";
 import ImgLyerList from "assets/images/menu/sokongan/all-the-data-folder-blue-animate.png";
 import ImgCriteria from "assets/images/menu/sokongan/critical-thinking-animate.png";
