@@ -12,8 +12,12 @@ import ImgMaklumatBandar from "assets/images/Modulutama/wall1.jpg";
 import ImgRnD from "assets/images/Modulutama/putrajaya1.png";
 import ImgSokongan from "assets/images/Modulutama/11.-Putrajaya-PPT-Design-LAAB-Series.jpg";
 import ImgBandarPintar from "assets/images/Modulutama/Smart-City-700x467.png";
+// Redux
+import {useSelector, useDispatch} from 'react-redux';
+import {setAuth} from 'store/actions';
 
 const ModulUtama = () => {
+    const dispatch = useDispatch();
 
     return (
         <>
@@ -96,7 +100,7 @@ const ModulUtama = () => {
                                 <div className="gridinfo">
                                     <h3>PLATFORM BANDAR PINTAR NEGARA</h3>
                                     <p className="gridexerpt mb-1">Membantu dalam menganalisis data / maklumat daripada pelbagai sumber yang berbeza untuk membuat keputusan.</p>
-                                    <a href="" className="btn btn-primary">MULA</a>
+                                    <a href="" className="btn btn-primary" onClick={() => dispatch(setAuth(true))}>MULA</a>
                                 </div>
                             </div>
                         </div>

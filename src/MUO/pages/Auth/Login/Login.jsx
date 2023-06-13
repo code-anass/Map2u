@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import logo from "assets/images/login_logo_sm.png";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+// Redux
+import {useSelector, useDispatch} from 'react-redux';
+import {setAuth} from 'store/actions';
 
 const Login = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const [kp, setKp] = useState("");
   const [password, setPassword] = useState("");
 
@@ -117,12 +120,12 @@ const Login = () => {
                   </i>{" "}
                 </p>
                 <div className="row mt-3">
-                  <button className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue">
+                  <button onClick={()=> dispatch(setAuth(true))} className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue">
                     Log Masuk
                   </button>
                   <Link
                     className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
-                    to="/register"
+                    to="/dashboard"
                   >
                     Pendaftaran Baharu
                   </Link>

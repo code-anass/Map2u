@@ -1,4 +1,3 @@
 export default {
-  auth: null,
-  onBoarding: true,
+  auth: false,
 };

@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import profileImage from "assets/images/profile-img.jpg";
 import logo from "assets/images/logo.png";
 import { NavLink, Link } from "react-router-dom";
+// Redux
+import {useSelector, useDispatch} from 'react-redux';
+import {setAuth} from 'store/actions';
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+  const dispatch = useDispatch();
 
   const handleToggleSidebar = () => {
     // sidebar scroll to left
@@ -194,7 +198,10 @@ const Navbar = () => {
                   to="/login"
                 >
                   <i className="bi bi-box-arrow-right" />
-                  <span>Log Out</span>
+                  <a href="#" onClick={()=>dispatch(setAuth(false))}>
+                    <span>Log Out</span>
+                  </a>
+            
                 </Link>
                 </li>
               </ul>
