@@ -3,12 +3,13 @@ import profileImage from "assets/images/profile-img.jpg";
 import logo from "assets/images/logo.png";
 import { NavLink, Link } from "react-router-dom";
 // Redux
-import {useSelector, useDispatch} from 'react-redux';
-import {setAuth} from 'store/actions';
+import { useSelector, useDispatch } from "react-redux";
+import { setAuth } from "store/actions";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
   const dispatch = useDispatch();
+  let dropdownVisible = false;
 
   const handleToggleSidebar = () => {
     // sidebar scroll to left
@@ -56,17 +57,33 @@ const Navbar = () => {
               </a>
             </li>
             {/* End Search Icon*/}
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" style={{ position: "relative" }}>
               <a
                 className="nav-link nav-icon"
                 href="#"
-                data-bs-toggle="dropdown"
+                data-bs-toggle="hover"
+                
+                onClick={(e) => {
+                  e.preventDefault();
+                  const dropdown = document.querySelector(".dropdown-menu");
+
+                  if (dropdownVisible) {
+                    dropdown.classList.remove("show");
+                    dropdownVisible = false;
+                  } else {
+                    dropdown.classList.add("show");
+                    dropdownVisible = true;
+                  }
+                }}
               >
                 <i className="bi bi-bell" style={{ color: "#fff" }} />
                 <span className="badge bg-primary badge-number">4</span>
               </a>
               {/* End Notification Icon */}
-              <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+              <ul
+                className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+                style={{ position: "absolute", right: "40%" }}
+              >
                 <li className="dropdown-header">
                   You have 4 new notifications
                   <a href="#">
@@ -129,11 +146,26 @@ const Navbar = () => {
               {/* End Notification Dropdown Items */}
             </li>
             {/* End Notification Nav */}
-            <li className="nav-item dropdown pe-3">
+            <li
+              className="nav-item dropdown pe-3"
+              style={{ position: "relative" }}
+            >
               <a
                 className="nav-link nav-profile d-flex align-items-center pe-0"
                 href="#"
-                data-bs-toggle="dropdown"
+                data-bs-toggle="hover"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const dropdown = document.querySelector("#profile_menu");
+
+                  if (dropdownVisible) {
+                    dropdown.classList.remove("show");
+                    dropdownVisible = false;
+                  } else {
+                    dropdown.classList.add("show");
+                    dropdownVisible = true;
+                  }
+                }}
               >
                 <img
                   src={profileImage}
@@ -148,7 +180,11 @@ const Navbar = () => {
                 </span>
               </a>
               {/* End Profile Iamge Icon */}
-              <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+              <ul
+                className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+                id="profile_menu"
+                style={{ position: "absolute", right: "24%" }}
+              >
                 <li className="dropdown-header">
                   <h6>Kevin Anderson</h6>
                   <span>Web Designer</span>
@@ -158,12 +194,12 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                  className="dropdown-item d-flex align-items-center"
-                  to="/profilePengguna"
-                >
-                  <i className="bi bi-person" />
-                  <span>My Account</span>
-                </Link>
+                    className="dropdown-item d-flex align-items-center"
+                    to="/profilePengguna"
+                  >
+                    <i className="bi bi-person" />
+                    <span>My Account</span>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
@@ -194,15 +230,14 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                  className="dropdown-item d-flex align-items-center"
-                  to="/login"
-                >
-                  <i className="bi bi-box-arrow-right" />
-                  <a href="#" onClick={()=>dispatch(setAuth(false))}>
-                    <span>Log Out</span>
-                  </a>
-            
-                </Link>
+                    className="dropdown-item d-flex align-items-center"
+                    to="/login"
+                  >
+                    <i className="bi bi-box-arrow-right" />
+                    <a href="#" onClick={() => dispatch(setAuth(false))}>
+                      <span>Log Out</span>
+                    </a>
+                  </Link>
                 </li>
               </ul>
               {/* End Profile Dropdown Items */}
