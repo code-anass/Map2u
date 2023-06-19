@@ -62,6 +62,7 @@ const Navbar = () => {
                 className="nav-link nav-icon"
                 href="#"
                 data-bs-toggle="hover"
+                style={{transform: "scaleX(-1)"}}
                 
                 onClick={(e) => {
                   e.preventDefault();
@@ -77,8 +78,8 @@ const Navbar = () => {
                 }}
               >
                 <i className="bi bi-bell" style={{ color: "#fff" }} />
-                <span className="badge bg-primary badge-number">4</span>
               </a>
+                <span className="badge bg-primary badge-number">4</span>
               {/* End Notification Icon */}
               <ul
                 className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
