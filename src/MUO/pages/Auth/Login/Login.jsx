@@ -5,10 +5,15 @@ import { useNavigate } from "react-router-dom";
 // Redux
 import { useSelector, useDispatch } from "react-redux";
 import { setAuth } from "store/actions";
+<<<<<<< HEAD
 
 import { UserService } from "services";
 import { Form, Modal, Input, Button } from "antd";
 
+=======
+import { UserService } from "services";
+import { Form, Modal, Input, Button } from "antd";
+>>>>>>> 2639ae3 (login API integrate)
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -153,10 +158,14 @@ const Login = () => {
                   >
                     Log Masuk
                   </button>
+<<<<<<< HEAD
                   <Link
                     className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
                     to="/register"
                   >
+=======
+                  <Link className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2">
+>>>>>>> 2639ae3 (login API integrate)
                     Pendaftaran Baharu
                   </Link>
                 </div>
