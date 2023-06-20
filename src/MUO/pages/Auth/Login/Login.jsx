@@ -3,9 +3,10 @@ import logo from "assets/images/login_logo_sm.png";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // Redux
-import {useSelector, useDispatch} from 'react-redux';
-import {setAuth} from 'store/actions';
-
+import { useSelector, useDispatch } from "react-redux";
+import { setAuth } from "store/actions";
+import { UserService } from "services";
+import { Form, Modal, Input, Button } from "antd";
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -26,6 +27,25 @@ const Login = () => {
     document.getElementById("resetModal").style.display = "none";
     document.getElementById("resetModal").style.backgroundColor =
       "rgba(0, 0, 0, 0)";
+  };
+
+  const onLogin = (e) => {
+    e.preventDefault();
+
+    let payload = {
+      ic_number: "010101010101",
+      password: "Admin123!@#",
+    };
+
+    UserService.login(payload)
+      .then((res) => {
+        console.log("asdasd", res);
+      })
+      .catch((err) => {
+        console.log("asdasd", err);
+      });
+
+    // dispatch(setAuth(true));
   };
 
   return (
@@ -119,14 +139,17 @@ const Login = () => {
                     </a>
                   </i>{" "}
                 </p>
+
                 <div className="row mt-3">
-                  <button onClick={()=> dispatch(setAuth(true))} className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue">
+                  <button
+                    onClick={(e) => {
+                      onLogin(e);
+                    }}
+                    className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue"
+                  >
                     Log Masuk
                   </button>
-                  <Link
-                    className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
-                    to="/dashboard"
-                  >
+                  <Link className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2">
                     Pendaftaran Baharu
                   </Link>
                 </div>

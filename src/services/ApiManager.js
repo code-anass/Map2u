@@ -3,7 +3,6 @@ import axios from "axios";
 import config from "config/appConfig";
 
 const BASE_URL = config.server_url;
-
 axios.defaults.validateStatus = (status) => {
   return status >= 200 && status <= 500;
 };
@@ -73,15 +72,15 @@ class Api {
     if (otherToken) {
       this.setHeaders(otherToken);
     }
-    return new Promise((res, rej) => {
-      // NetInfo.fetch().then(({isConnected}) => {
-      //   if (isConnected) {
-      //     res(true);
-      //   } else {
-      //     rej({data: 'Network connection failed!', status: 400});
-      //   }
-      // });
-    });
+    // return new Promise((res, rej) => {
+    //   // NetInfo.fetch().then(({isConnected}) => {
+    //   //   if (isConnected) {
+    //   //     res(true);
+    //   //   } else {
+    //   //     rej({data: 'Network connection failed!', status: 400});
+    //   //   }
+    //   // });
+    // });
   }
 
   async get(url, params = null, otherToken = "") {

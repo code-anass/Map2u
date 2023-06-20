@@ -24,7 +24,7 @@ function App() {
   console.log("=-ANAS REDUX", AuthUser);
   return (
     <>
-      {AuthUser ? (
+      {false ? (
         <div>
           <Navbar />
           <Sidebar />
