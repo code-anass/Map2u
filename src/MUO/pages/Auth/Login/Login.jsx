@@ -3,8 +3,8 @@ import logo from "assets/images/login_logo_sm.png";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // Redux
-import {useSelector, useDispatch} from 'react-redux';
-import {setAuth} from 'store/actions';
+import { useSelector, useDispatch } from "react-redux";
+import { setAuth } from "store/actions";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,6 +26,11 @@ const Login = () => {
     document.getElementById("resetModal").style.display = "none";
     document.getElementById("resetModal").style.backgroundColor =
       "rgba(0, 0, 0, 0)";
+  };
+
+  const HandleLogin = () => {
+    dispatch(setAuth(true));
+    navigate("/modulUtama");
   };
 
   return (
@@ -120,12 +125,15 @@ const Login = () => {
                   </i>{" "}
                 </p>
                 <div className="row mt-3">
-                  <button onClick={()=> dispatch(setAuth(true))} className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue">
+                  <button
+                    onClick={() => HandleLogin()}
+                    className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue"
+                  >
                     Log Masuk
                   </button>
                   <Link
                     className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
-                    to="/dashboard"
+                    to="/register"
                   >
                     Pendaftaran Baharu
                   </Link>

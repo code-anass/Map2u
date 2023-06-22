@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SmartCity from "./routes/SmartCity";
 import { ProSidebarProvider } from "react-pro-sidebar";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import "assets/boxicons/css/boxicons.min.css";
@@ -13,6 +13,7 @@ import Sidebar from "components/muo/sidebar/Sidebar";
 import Main from "./routes/Main";
 import Login from "./MUO/pages/Auth/Login/Login";
 import Register from "./MUO/pages/Auth/Register/Register";
+import Landing from "./MUO/pages/Landing/Landing";
 // Redux
 import { useSelector } from "react-redux";
 
@@ -24,6 +25,9 @@ function App() {
   console.log("=-ANAS REDUX", AuthUser);
   return (
     <>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
       {AuthUser ? (
         <div>
           <Navbar />
