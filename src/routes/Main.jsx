@@ -15,6 +15,8 @@ import DataRepositori from "../MUO/pages/Menu/MenuPenyelidikan/DataRepositori";
 import SenaraiPengurusanData from "../MUO/pages/PengurusanData/SenaraiPengurusanData";
 import TetapanBerita from "../MUO/pages/CMS/TetapanBerita";
 import ServisPeta from "../MUO/pages/ServisPeta/ServisPeta";
+import TetapanRakanKolaborasi from "MUO/pages/CMS/TetapanRakanKolaborasi";
+import TetapanAgensi from "SmartCity/screens/adminModule/tetapanpemantauan/tetapanagensi/TetapanAgensi";
 const Main = () => {
   return (
       <Routes>
@@ -39,6 +41,7 @@ const Main = () => {
         <Route path="/dataRepositori" element={<DataRepositori />} />
         <Route path="/tetapanBerita" element={<TetapanBerita />} />
         <Route path="/servisPeta" element={<ServisPeta />} />
+        <Route path="/tetapanRakanKolaborasi" element={<TetapanRakanKolaborasi/>}/>
       </Routes>
   );
 };
