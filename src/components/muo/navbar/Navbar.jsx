@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import profileImage from "assets/images/profile-img.jpg";
 import logo from "assets/images/logo.png";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 // Redux
 import { useSelector, useDispatch } from "react-redux";
 import { setAuth } from "store/actions";
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [state, setState] = useState(false);
   const dispatch = useDispatch();
   let dropdownVisible = false;
+  const navigate = useNavigate();
 
   const handleToggleSidebar = () => {
     // sidebar scroll to left
@@ -26,6 +27,11 @@ const Navbar = () => {
       main.style.marginLeft = "0px";
       setState(true);
     }
+  };
+
+  const HandleLogout = () => {
+    dispatch(setAuth(false));
+    navigate("/login");
   };
 
   return (
@@ -62,8 +68,7 @@ const Navbar = () => {
                 className="nav-link nav-icon"
                 href="#"
                 data-bs-toggle="hover"
-                style={{transform: "scaleX(-1)"}}
-                
+                style={{ transform: "scaleX(-1)" }}
                 onClick={(e) => {
                   e.preventDefault();
                   const dropdown = document.querySelector(".dropdown-menu");
@@ -79,7 +84,7 @@ const Navbar = () => {
               >
                 <i className="bi bi-bell" style={{ color: "#fff" }} />
               </a>
-                <span className="badge bg-primary badge-number">4</span>
+              <span className="badge bg-primary badge-number">4</span>
               {/* End Notification Icon */}
               <ul
                 className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
@@ -235,7 +240,7 @@ const Navbar = () => {
                     to="/login"
                   >
                     <i className="bi bi-box-arrow-right" />
-                    <a href="#" onClick={() => dispatch(setAuth(false))}>
+                    <a href="#" onClick={() => HandleLogout()}>
                       <span>Log Out</span>
                     </a>
                   </Link>
