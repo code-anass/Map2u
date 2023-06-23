@@ -283,10 +283,21 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li>
-              <a href="icons-boxicons.html">
+              <NavLink
+                to="/tetapanInsight"
+                style={({ isActive }) => {
+                  if (isActive) {
+                    return {
+                      color: "#4154f1",
+                      fontWeight: "bold",
+                      backgroundColor: "#f6f9ffff",
+                    };
+                  }
+                }}
+              >
                 <i className="bi bi-circle" />
                 <span>Tetapan Insights</span>
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="icons-boxicons.html">
