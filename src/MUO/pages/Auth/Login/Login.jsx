@@ -49,6 +49,7 @@ const Login = () => {
         console.log("asdasd", err);
       });
 
+    console.log("GIT TEST")
     // dispatch(setAuth(true));
   };
 
