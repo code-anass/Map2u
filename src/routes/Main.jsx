@@ -16,6 +16,7 @@ import SenaraiPengurusanData from "../MUO/pages/PengurusanData/SenaraiPengurusan
 import TetapanBerita from "../MUO/pages/CMS/TetapanBerita";
 import ServisPeta from "../MUO/pages/ServisPeta/ServisPeta";
 import TetapanRakanKolaborasi from "MUO/pages/CMS/TetapanRakanKolaborasi";
+import TetapanInsight from "MUO/pages/CMS/TetapanInsight";
 import TetapanAgensi from "SmartCity/screens/adminModule/tetapanpemantauan/tetapanagensi/TetapanAgensi";
 const Main = () => {
   return (
@@ -42,6 +43,7 @@ const Main = () => {
         <Route path="/tetapanBerita" element={<TetapanBerita />} />
         <Route path="/servisPeta" element={<ServisPeta />} />
         <Route path="/tetapanRakanKolaborasi" element={<TetapanRakanKolaborasi/>}/>
+        <Route path="/tetapanInsight" element={<TetapanInsight/>}/>
       </Routes>
   );
 };
