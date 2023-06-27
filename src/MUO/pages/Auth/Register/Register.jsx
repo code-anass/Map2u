@@ -74,20 +74,19 @@ const Register = () => {
 
 
     return (
-        <div className="login">
+        <div className="login col-12">
             <Link className="bi bi-house-fill home-icon" style={{ fontSize: "35px", color: "grey" }}
                 to="/dashboard">
             </Link>
-            <div className="row justify-content-center">
-                <div className="col">
+            <div className="row">
+                <div className="col-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div className="loginLogo">
-                        <img src={logo} />
+                        <img src={logo} style={{ display: 'block', marginLeft: -100 }} />
                     </div>
                 </div>
 
                 <div className="col pe-3">
-
-                    <div className="card register-card">
+                    <div className="card register-card" style={{right:"-35px"}}>
                         <Link className="bi bi-arrow-left-circle-fill" style={{
                             fontSize: "35px",
                             color: "grey",
