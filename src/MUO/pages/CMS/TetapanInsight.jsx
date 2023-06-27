@@ -54,7 +54,7 @@ const tetapanInsight = () => {
             <div className="card p-3" style={{ width: "98%", backgroundImage: `url(${AngleSvg})`, backgroundSize: "100% auto", backgroundRepeat: "no-repeat", backgroundPosition: "center bottom" }}>
                     <div className="d-flex justify-content-start mb-3">
                         {/* <button className="btn btn-success" onClick={() => navigate("/tambahPengguna")}>Tambah Pengguna</button> */}
-                        <button className="btn btn-success" data-bs-toggle="modal" data-bs-target="#tambahModal">Tambah Rakan Kolaborasi</button>
+                        <button className="btn btn-success" data-bs-toggle="modal" data-bs-target="#tambahModal">Tambah Dashboard Insight</button>
                     </div>
                     <DataTable
                         columns={[
@@ -74,11 +74,17 @@ const tetapanInsight = () => {
                                 name: "Tajuk Data",
                                 selector: "tajukData",
                                 sortable: true,
-                                width: "45%",
+                                width: "40%",
                             },
                             {
                                 name: "Keterangan",
                                 selector: "keterangan",
+                                sortable: true,
+                                width: "10%",
+                            },
+                            {
+                                name: "Status",
+                                selector: "status",
                                 sortable: true,
                                 width: "10%",
                             },
@@ -131,6 +137,8 @@ const tetapanInsight = () => {
                                 levelDashboard: "Unit Pemodenan Tadbiran dan Perancangan Pengurusan Malaysia",
                                 tajukData: "Unit Pemodenan Tadbiran dan Perancangan Pengurusan Malaysia",
                                 keterangan:"Rakan Strategik",
+                                status:"Aktif",
+
                             },
 
                             {
@@ -138,6 +146,7 @@ const tetapanInsight = () => {
                                 levelDashboard: "Jabatan Perangkaan Malaysia",
                                 tajukData: "Jabatan Perangkaan Malaysia",
                                 keterangan:"Rakan Strategik",
+                                status:"Aktif",
                             },
 
                             {
@@ -145,6 +154,7 @@ const tetapanInsight = () => {
                                 levelDashboard: "Jabatan Ukur Dan Pemetaan Malaysia",
                                 tajukData: "Jabatan Ukur Dan Pemetaan Malaysia",
                                 keterangan:"Rakan Pintar",
+                                status:"Aktif",
                             },
 
                             {
@@ -152,6 +162,7 @@ const tetapanInsight = () => {
                                 levelDashboard: "Jabatan Kerja Raya",
                                 tajukData: "Jabatan Kerja Raya",
                                 keterangan:"Rakan Pintar",
+                                status:"Aktif",
                             },
 
                         ]}
