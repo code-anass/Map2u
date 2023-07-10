@@ -20,26 +20,28 @@ import { useSelector } from "react-redux";
 function App() {
   const [isAuth, setIsAuth] = useState(true);
   const [isSmartCity, setIsSmartCity] = useState(false);
-  const AuthUser = useSelector((state) => state.authUser.auth);
+  const AuthUser = useSelector((state) => state.authUser.token);
 
-  console.log("=-ANAS REDUX", AuthUser);
   return (
     <>
       <Routes>
         <Route path="/" element={<Landing />} />
       </Routes>
+
       {AuthUser ? (
-        <div>
-          <Navbar />
-          <Sidebar />
-          <main id="main" className="main">
-            <Main />
-          </main>
-        </div>
-      ) : isSmartCity ? (
-        <ProSidebarProvider>
-          <SmartCity />
-        </ProSidebarProvider>
+        isSmartCity ? (
+          <ProSidebarProvider>
+            <SmartCity />
+          </ProSidebarProvider>
+        ) : (
+          <div>
+            <Navbar />
+            <Sidebar />
+            <main id="main" className="main">
+              <Main />
+            </main>
+          </div>
+        )
       ) : (
         <Routes>
           <Route path="/login" element={<Login />} />

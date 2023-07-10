@@ -39,9 +39,9 @@ const Login = () => {
 
     UserService.login(payload)
       .then((res) => {
-        dispatch(setAuth(true));
-        navigate("/modulUtama");
         console.log("asdasd", res);
+        dispatch(setAuth(res?.data?.token));
+        navigate("/modulUtama");
       })
       .catch((err) => {
         console.log("asdasd", err);

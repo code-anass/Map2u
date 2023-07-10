@@ -7,7 +7,7 @@ export default (state = AuthUser, action) => {
     case ACTION_TYPES.AUTH:
       return {
         ...state,
-        auth: payload,
+        token: payload,
       };
     default:
       return state;
