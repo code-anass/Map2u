@@ -47,7 +47,6 @@ const Login = () => {
         console.log("asdasd", err);
       });
 
-    // dispatch(setAuth(true));
   };
 
   return (
@@ -151,7 +150,10 @@ const Login = () => {
                   >
                     Log Masuk
                   </button>
-                  <Link className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2">
+                  <Link
+                    to="/register"
+                    className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
+                  >
                     Pendaftaran Baharu
                   </Link>
                 </div>

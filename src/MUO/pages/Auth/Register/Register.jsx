@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "assets/images/login_logo_sm.png";
 import { NavLink, Link } from "react-router-dom";
 import { getValue } from "@testing-library/user-event/dist/utils";
+import { UserService } from "services";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
     const [state, setState] = useState("")
@@ -10,6 +12,14 @@ const Register = () => {
     const [pbtState, setPbtState] = useState(false)
     const [institusiState, setInstitusiState] = useState(false)
     const [swastaState, setSwastaState] = useState(false)
+    const [fullName, setFullName] = useState('John Doe')
+    const [email, setEmail] = useState('johhhahasdasdah@examsssple.com')
+    const [icNumber, setIcNumber] = useState('920899055258')
+    const [phone, setPhone] = useState('0290564957')
+    const [password, setPassword] = useState('password123')
+    const [passwordConfirmation, setPasswordConfirmation] = useState('password123')
+    const [userCategory, setUserCategory] = useState('6')
+    const navigate = useNavigate();
 
     const hideshow = (e) => {
         console.log(e.target.value);
@@ -71,6 +81,39 @@ const Register = () => {
         // inverse the boolean state of passwordShown
         setPasswordShown(!passwordShown);
     };
+
+    const onRegister = (e) => {
+        e.preventDefault();
+    
+        let payload = {
+            name: "John Doe",
+            email: 'jhutrewjuh@examsssple.com',
+            ic_number: '920899065328',
+            contact_no: '0290567667',
+            password: 'password123',
+            password_confirmation: 'password123',
+            user_category: '6',
+            agency: "",
+            service_group: "",
+            pbt: "",
+            ipt_name: "",
+            ipt_start_at: "",
+            ipt_end_at: "",
+            company_name: "",
+            private_state: "",
+        };
+
+        UserService.register(payload)
+          .then((res) => {
+            console.log("asdasd", res);
+            if(res?.status === 200){
+              navigate("/login");
+            }
+          })
+          .catch((err) => {
+            console.log("asdasd", err);
+          });
+      };
 
 
     return (
@@ -301,13 +344,14 @@ const Register = () => {
                                         {/* END OF PILIHAN : SWASTA */}
                                     </div>
 
-
-                                    <Link
-                                        className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue mt-2"
-                                        to="/login"
+                                    <button
+                                        onClick={(e) => {
+                                        onRegister(e);
+                                        }}
+                                        className="btn btn-md btn-block btn-primary waves-effect waves-light custom-btn-blue"
                                     >
-                                        Daftar
-                                    </Link>
+                                       Daftar
+                                    </button>
                                 </div>
                             </form>
                         </div>
