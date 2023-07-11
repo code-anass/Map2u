@@ -6,8 +6,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "store";
 import AppNavigator from 'AppNavigator';
 
+const { persistor, store } = configureStore();
 function App() {
-  const { persistor, store } = configureStore();
 
   return (
     <>
