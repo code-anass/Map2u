@@ -16,11 +16,13 @@ import Register from "./MUO/pages/Auth/Register/Register";
 import Landing from "./MUO/pages/Landing/Landing";
 // Redux
 import { useSelector } from "react-redux";
+import SdgModule from "routes/SdgModule";
 
 function App() {
   const [isAuth, setIsAuth] = useState(true);
   const [isSmartCity, setIsSmartCity] = useState(false);
   const AuthUser = useSelector((state) => state.authUser.token);
+  const [isSdgModule, setIsSdgModule] = useState(true);
 
   return (
     <>
@@ -42,6 +44,8 @@ function App() {
             </main>
           </div>
         )
+      ) : isSdgModule ? (
+        <SdgModule/>
       ) : (
         <Routes>
           <Route path="/login" element={<Login />} />
