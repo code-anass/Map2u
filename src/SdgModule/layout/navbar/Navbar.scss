@@ -1,0 +1,149 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    @media (max-width:00px) {
+        display: flex;
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 150px;
+    }
+    .navbar-name {
+        width: 220px;
+        // display: flex;
+        font-size: 13px;
+        margin-top: 20px;
+        // float: right;
+        @media (max-width:700px) {
+            float: right;
+            padding-bottom: 20px;
+        }
+        .icon-navbar{
+            margin-top: 0px;
+        }
+    }   
+        p{
+            padding: 16px 5px 0 10px ;
+            color: #979797;
+        }
+    .navbar-p1{
+        padding: 70px 0 0 25px;
+        font-size: 13px;
+        color: #979797;
+        @media (max-width:700px) {
+            padding: 35px 0 0 15px;
+        }
+        @media (max-width:400px) {
+            padding: 25 0 0 15px;
+        }
+    }
+
+}
+
+.menu{
+    display: none;
+    @media (max-width:700px) {
+        display: block;
+    }
+}
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    .side-bar-main-navbar {
+        width: 250px;
+        height: 100%;
+        background-color: rgb(12, 0, 0);
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        overflow: auto; /* Add this line */
+        transition: transform 0.3s ease-in-out;
+      
+        @media (min-width: 701px) {
+          transform: translateX(-100%);
+        }
+
+        p {
+            font-size: 13px;
+            padding-left: 20px;
+        }
+
+        span {
+            font-size: 13px;
+            padding-left: 20px;
+        }
+
+        .side-header {
+            display: flex;
+            height: 80px;
+            font-weight: 700;
+            text-align: center;
+            justify-content: center;
+            padding-top: 40px;
+
+            h4 {
+                width: 150px;
+            }
+
+            .double-arrow {
+                width: 50px;
+                float: right;
+            }
+
+        }
+
+        .shape {
+            display: flex;
+            padding-left: 20px;
+            margin-top: 50px;
+
+            p {
+                font-size: 13px;
+                padding-left: 10px;
+            }
+        }
+
+        .path {
+            width: 100%;
+            display: flex;
+            padding-left: 20px;
+            margin-top: 50px;
+        }
+
+        ul {
+            font-size: 13px;
+            padding-left: 20px;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        ul li {
+            padding: 5px 0 5px 50px;
+        }
+
+        ul li::before {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background-color: blue;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-bottom: 2px;
+        }
+    }
+
+
+

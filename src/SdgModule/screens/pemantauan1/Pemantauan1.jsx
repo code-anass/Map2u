@@ -8,20 +8,21 @@ import { ReactComponent as Initialicon } from './assets/Initial icon.svg'
 import { ReactComponent as Logoo } from './assets/image 48.svg'
 import { ReactComponent as Dropdown } from './assets/dropdown.svg'
 import { ReactComponent as Dropdown1 } from './assets/dropdown (1).svg'
-// import { ReactComponent as Third } from './assets/Screenshot.svg'
-// import { ReactComponent as Fourth } from './assets/IKP Dimensi Alam Sekitar 2.svg'
-// import { ReactComponent as Fifth } from './assets/IKP Dimensi Sosial 3.svg'
 import Dalls from './assets/image 58.png'
 import Dalls3 from './assets/Screenshot_2022-01-13_114415-removebg-preview 2.png'
 import Dalls4 from './assets/IKP Dimensi Alam Sekitar 2.png'
 import Dalls5 from './assets/IKP Dimensi Sosial 3.png'
-// import  Dalls   from './assets/image 58.png'
+import Dalls6 from './assets/210058.svg'
+import Dalls7 from './assets/Plan Malaysia ngn jata negara.svg'
+import Sidebar from '../../layout/sidebar/Sidebar'
+import Navbar from '../../layout/navbar/Navbar'
+
 
 
 const Pemantauan1 = () => {
     return (
         <>
-            <div className='main-both'>
+            {/* <div className='main-both'>
                 <div className="side-bar-main">
 
                     <div className='side-header'>
@@ -55,7 +56,17 @@ const Pemantauan1 = () => {
                             <Initialicon />
                         </div>
                     </div>
-                    <p className='navbar-p1'>Indeks Komposit Pembangunan (IKP)</p>
+                    <p className='navbar-p1'>Indeks Komposit Pembangunan (IKP)</p> */}
+                    <div className='peman1' style={{ display: "flex" }}>
+        <div>
+          <Sidebar />
+        </div>
+
+        <div className='navbar-peman'>
+          <Navbar style={{ border: "1px solid blue" }} />
+
+
+
 
 
                     <div className='main-content'>
@@ -194,7 +205,10 @@ const Pemantauan1 = () => {
 
 
 
-
+<div className='final-img'>
+    <img src={Dalls6} alt='' style={{margin:"15px"}} />
+    <img src={Dalls7} alt='' style={{margin:"15px 0 0 0"}} />
+</div>
 
 
 
