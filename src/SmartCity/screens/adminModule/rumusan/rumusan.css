@@ -1,0 +1,69 @@
+.rumusan {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  margin-top: 10px;
+  margin-right: 10px;
+  min-height: 80vh;
+}
+.rumusan h3 {
+  padding: 10px;
+}
+.rumusan .table-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 5px;
+  min-height: 500px;
+  margin: 5px;
+}
+.rumusan .table-data .filter-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.rumusan .table-data .filter-details .left {
+  width: 200px;
+}
+.rumusan .table-data .filter-details .left p {
+  font-size: 12px;
+}
+.rumusan .table-data .filter-details .left .below {
+  margin-top: 10px;
+}
+.rumusan .table-data .filter-details .right {
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+.rumusan .table-data th {
+  background-color: var(--table-head);
+  color: var(--white);
+  text-align: center;
+}
+.rumusan .table-data td {
+  text-align: center;
+}
+.rumusan .table-data .btns-info {
+  align-self: flex-end;
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.rumusan .table-data .btns-info .btn {
+  padding: 5px 10px;
+  background-color: var(--gold);
+  color: var(--white);
+  cursor: pointer;
+}
+.rumusan .table-data .btns-info .blue {
+  background-color: var(--primary-lt);
+}/*# sourceMappingURL=rumusan.css.map */

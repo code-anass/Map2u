@@ -1,0 +1,81 @@
+.hubung {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.hubung h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.hubung .hubungiKami {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex: 5;
+}
+.hubung .hubungiKami .left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.hubung .hubungiKami .left img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hubung .hubungiKami .right {
+  flex: 3;
+}
+.hubung .hubungiKami .right h3 {
+  color: var(--primary);
+}
+.hubung .hubungiKami .right .contact {
+  width: 100%;
+  height: 500px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hubung .hubungiKami .right .contact img {
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hubung .hubungiKami .right .contact .address1 {
+  font-size: 12px;
+}
+.hubung .hubungiKami .right .contact .address1 .cell {
+  margin-top: 10px;
+}
+.hubung .hubungiKami .right .contact .address1 .cell .row {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hubung .hubungiKami .right .contact .address1 .cell .row .icon {
+  font-size: 15px;
+}
+.hubung .hubungiKami .right .contact .address1 .cell .row .icon2 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 750px) {
+  .hubung .hubungiKami {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hubung .hubungiKami .right .contact {
+    width: 90%;
+  }
+}/*# sourceMappingURL=hubungi.css.map */

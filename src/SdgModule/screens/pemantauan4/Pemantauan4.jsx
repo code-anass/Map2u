@@ -9,10 +9,13 @@ import { RxCross2 } from 'react-icons/rx'
 import { IoMdArrowDropup } from 'react-icons/io'
 import { Pagination } from 'antd';
 import { Button, Modal } from 'antd';
+import ModalBig from './ModalBig'
 
 
 const Pemantauan4 = () => {
+  const [isModalOpen1, setIsModalOpen1] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -23,7 +26,6 @@ const Pemantauan4 = () => {
     setIsModalOpen(false);
   };
 
-  const [isModalOpen1, setIsModalOpen1] = useState(false);
   const showModal1 = () => {
     setIsModalOpen1(true);
   };
@@ -33,6 +35,23 @@ const Pemantauan4 = () => {
   const handleCancel1 = () => {
     setIsModalOpen1(false);
   };
+
+
+
+
+  const showModal2 = () => {
+    setIsModalOpen2(true);
+  };
+
+  const handleOk2 = () => {
+    setIsModalOpen2(false);
+  };
+
+  const handleCancel2 = () => {
+    setIsModalOpen2(false);
+  };
+
+
   return (
     <>
 
@@ -45,11 +64,20 @@ const Pemantauan4 = () => {
           <Navbar style={{ border: "1px solid blue" }} />
           <div className='newpeman4'>
             <div className='p4-btns'>
-              <button style={{ background: "#90BFCA" }}>SENARAI</button>
+
+
+              <button style={{ background: "#90BFCA" }}>
+            <ModalBig showModal2={showModal2} isModalOpen2={isModalOpen2} handleOk2={handleOk2} handleCancel2={handleCancel2} />
+
+              </button>
               <button style={{ background: "#DADADA" }}>SEMAKAN</button>
             </div>
             <div className='inner-peman4'>
               <div className='p4-input'>
+
+
+
+
                 <div className='p4inner-input'>
                   <span>Dimensi</span>
                   <input placeholder='Pilih Dimensi' />
@@ -62,7 +90,7 @@ const Pemantauan4 = () => {
                   <p>Dimensi social</p>
                 </div>
 
-                <div className='p4inner-input'>
+                <div className='p4inner-input1'>
                   <span>Dimensi</span>
                   <input placeholder='Pilih Komponen' />
                   <div className='icons'>

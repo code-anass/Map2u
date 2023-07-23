@@ -1,0 +1,48 @@
+.profileBandar {
+  background: linear-gradient(270deg, #142d58 0.65%, #0a2041 100%);
+  min-height: 100vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profileBandar .main-heading {
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+.profileBandar .profiles {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  min-height: 210px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.profileBandar .profiles .card {
+  width: 170px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+.profileBandar .profiles .card img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profileBandar .profiles .card p {
+  text-align: center;
+  font-size: 11px;
+}/*# sourceMappingURL=profileBandar.css.map */

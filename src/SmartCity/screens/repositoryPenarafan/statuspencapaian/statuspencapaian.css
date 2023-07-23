@@ -1,0 +1,73 @@
+.status-pencapaian {
+  padding: 20px;
+}
+.status-pencapaian .heading {
+  text-align: center;
+  padding: 10px 0px;
+  color: var(--primary);
+}
+.status-pencapaian .main-div {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 96%;
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: 15px;
+}
+.status-pencapaian .main-div .left {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.status-pencapaian .main-div .left .head {
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+}
+.status-pencapaian .main-div .left .blue {
+  background-color: var(--primary);
+}
+.status-pencapaian .main-div .left .cyan {
+  background-color: var(--secondary);
+}
+.status-pencapaian .main-div .left .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.status-pencapaian .main-div .left .boxes .box {
+  width: 220px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.status-pencapaian .main-div .left .boxes .box .left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.status-pencapaian .main-div .left .boxes .box .right-x p {
+  margin: 0px;
+  text-align: center;
+}
+.status-pencapaian .main-div .right {
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+}
+.status-pencapaian p {
+  margin: 0px;
+  text-align: center;
+}/*# sourceMappingURL=statuspencapaian.css.map */

@@ -1,0 +1,49 @@
+.step1-form {
+  width: 80%;
+  margin: auto;
+  background-color: yello;
+  flex-direction: column;
+}
+.step1-form .heading {
+  font-weight: bold;
+  color: var(--secondary);
+  text-align: center;
+}
+.step1-form .notice {
+  width: 100%;
+  background-color: var(--light-green);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.step1-form h3 {
+  color: var(--white);
+  padding-top: 10px;
+}
+.step1-form i,
+.step1-form li,
+.step1-form p {
+  color: var(--grey-light);
+  padding-top: 10px;
+}
+.step1-form .form-inputs {
+  margin-top: 15px;
+}
+.step1-form .form-inputs p {
+  margin: 0px;
+  font-size: 15px;
+  color: var(--white);
+}
+.step1-form .form-inputs p span {
+  color: var(--red);
+}
+
+.my-row {
+  padding: 10px 0px;
+}
+.my-row .spn {
+  color: var(--white);
+}/*# sourceMappingURL=step1.css.map */

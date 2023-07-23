@@ -1,0 +1,113 @@
+.puncakuasa {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding-bottom: 50px;
+}
+.puncakuasa .top-h {
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.puncakuasa .top-h h2 {
+  text-align: center;
+}
+.puncakuasa .card {
+  width: 95%;
+  min-height: 30vh;
+  background-color: var(--white);
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+.puncakuasa .card .left {
+  flex: 1;
+  background-color: var(--cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.puncakuasa .card .left img {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.puncakuasa .card .right {
+  flex: 4;
+  padding: 20px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.puncakuasa .card .right p {
+  margin: 0px;
+}
+.puncakuasa .card .right .bold {
+  font-weight: bold;
+  color: var(--cyan);
+}
+.puncakuasa .card .right .hr {
+  border-bottom: 1px solid var(--grey-light);
+  padding-top: 20px;
+}
+.puncakuasa .card:hover {
+  transform: scaleY(1.01);
+}
+.puncakuasa h3 {
+  margin: 0 auto;
+}
+.puncakuasa .card2 {
+  width: 95%;
+  min-height: 20vh;
+  background-color: var(--white);
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+.puncakuasa .card2 .left {
+  flex: 1;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.puncakuasa .card2 .left img {
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.puncakuasa .card2 .right {
+  flex: 4;
+  padding: 20px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.puncakuasa .card2 .right p {
+  margin: 0px;
+}
+.puncakuasa .card2 .right .bold {
+  font-weight: bold;
+  color: var(--cyan);
+}
+.puncakuasa .card2 .right .hr {
+  border-bottom: 1px solid var(--grey-light);
+  padding-top: 20px;
+}
+.puncakuasa .card2:hover {
+  transform: scaleY(1.01);
+}
+
+@media screen and (max-width: 700px) {
+  .puncakuasa h3 {
+    text-align: center;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=puncakuasa.css.map */

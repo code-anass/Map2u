@@ -1,0 +1,72 @@
+.pengesahan-pemant {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pengesahan-pemant .main-h {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.pengesahan-pemant .table-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
+  border: 1px solid rgb(228, 224, 224);
+  margin-right: 10px;
+  border-radius: 5px;
+  min-height: 500px;
+  background-color: var(--white);
+}
+.pengesahan-pemant .table-data .input {
+  width: 300px;
+  margin-top: 5px;
+  padding: 7px 10px;
+  border: none;
+  background-color: lightgrey;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.pengesahan-pemant .table-data .p {
+  font-size: 12px;
+}
+.pengesahan-pemant .table-data .new-details {
+  margin-top: 20px;
+}
+.pengesahan-pemant .table-data .btns-info {
+  align-self: flex-end;
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.pengesahan-pemant .table-data .btns-info .btn {
+  padding: 5px 10px;
+  background-color: var(--gold);
+  color: var(--white);
+  cursor: pointer;
+}
+.pengesahan-pemant .table-data .btns-info .blue {
+  background-color: var(--primary-lt);
+}
+.pengesahan-pemant .table-data th {
+  background-color: var(--table-head);
+  color: var(--white);
+  text-align: center;
+}
+.pengesahan-pemant .table-data th > .bill {
+  width: 50px !important;
+}
+.pengesahan-pemant .table-data td {
+  text-align: center;
+}
+.pengesahan-pemant .table-data td .td-span {
+  background-color: yellow;
+}
+.pengesahan-pemant .table-data td .td-disahkan {
+  background-color: var(--green-new);
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: var(--white);
+}/*# sourceMappingURL=pengesahanpemant.css.map */

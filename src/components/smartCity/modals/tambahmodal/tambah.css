@@ -1,0 +1,36 @@
+.tambah-modal {
+  display: flex;
+  flex-direction: column;
+}
+.tambah-modal .top-header {
+  background-color: var(--table-head);
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.tambah-modal .top-header .btnCnl {
+  cursor: pointer;
+}
+.tambah-modal .content-row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+.tambah-modal .content-row .btn-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.tambah-modal .content-row .btn-row .btn-kembali {
+  background-color: var(--gold);
+}
+
+.modalStyle .ant-modal-content {
+  padding: 0px;
+}/*# sourceMappingURL=tambah.css.map */

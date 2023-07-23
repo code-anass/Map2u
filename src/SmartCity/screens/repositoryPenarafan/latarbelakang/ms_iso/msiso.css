@@ -1,0 +1,73 @@
+.msiso {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  padding: 20px;
+  color: var(--white);
+}
+.msiso .top-h {
+  text-align: center;
+  width: 100%;
+}
+.msiso .h3 {
+  color: var(--cyan);
+  text-align: center;
+}
+.msiso .msiso-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 20px;
+}
+.msiso .msiso-desc img {
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.msiso .msiso-desc .desc {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 10px;
+}
+.msiso .msiso-desc .desc .card {
+  width: 270px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: all 150ms ease-in-out;
+}
+.msiso .msiso-desc .desc .card img {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.msiso .msiso-desc .desc .card p {
+  margin: 0px;
+  text-align: left;
+}
+.msiso .msiso-desc .desc .card span {
+  color: var(--cyan);
+}
+.msiso .msiso-desc .desc .card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .msiso {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .msiso .msiso-desc {
+    flex-direction: column;
+  }
+  .msiso .msiso-desc .desc {
+    grid-template-columns: repeat(1, 250px);
+  }
+}/*# sourceMappingURL=msiso.css.map */

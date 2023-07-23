@@ -1,0 +1,226 @@
+.navbar-peman {
+  width: 100%;
+}
+
+.newpeman4 {
+  width: 100%;
+  background-color: #d4cccc;
+  padding-top: 1px;
+  padding-bottom: 30px;
+}
+.newpeman4 .p4-btns {
+  margin: 50px 0 0 50px;
+}
+.newpeman4 .p4-btns button {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px 10px 0 0px;
+  margin-left: 20px;
+  border: none;
+}
+.newpeman4 .inner-peman4 {
+  width: 97%;
+  border-radius: 30px;
+  background-color: white;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.newpeman4 .inner-peman4 .p4-input {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  font-size: 14px;
+}
+.newpeman4 .inner-peman4 .p4-input .p4inner-input1 {
+  padding-top: 20px;
+  margin: 30px 0 10px 20px;
+  width: 220px;
+  height: auto;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.newpeman4 .inner-peman4 .p4-input .p4inner-input1 ::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+.newpeman4 .inner-peman4 .p4-input .p4inner-input1 .icons {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+.newpeman4 .inner-peman4 .p4-input .p4inner-input1 p {
+  border-bottom: 1px solid rgb(163, 160, 160);
+  padding: 0 0 5px 10px;
+  width: 100%;
+}
+.newpeman4 .inner-peman4 .p4-input .p4inner-input1 input {
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(197, 197, 216);
+}
+.newpeman4 .inner-peman4 ::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+.newpeman4 .inner-peman4 .p4inner-input {
+  padding-top: 20px;
+  margin: 30px 0 10px 20px;
+  width: 220px;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.newpeman4 .inner-peman4 .p4inner-input .icons {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+.newpeman4 .inner-peman4 .p4inner-input p {
+  border-bottom: 1px solid rgb(163, 160, 160);
+  padding: 0 0 5px 10px;
+  width: 100%;
+}
+.newpeman4 .inner-peman4 .p4inner-input input {
+  width: 220px;
+  height: 30px;
+  border: 1px solid rgb(197, 197, 216);
+}
+.newpeman4 .inner-peman4 .logo-headp2 {
+  padding: 30px;
+}
+.newpeman4 .inner-peman4 .logo-headp2 span {
+  font-weight: 550;
+  font-size: 14px;
+}
+
+.tables-p4 {
+  margin-top: 50px;
+  width: 97%;
+  margin: 10px;
+  font-size: 16px;
+  overflow-y: auto;
+  border: 1px solid rgb(211, 204, 204);
+}
+.tables-p4 th {
+  color: white !important;
+}
+.tables-p4 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tables-p4 th, .tables-p4 td {
+  border-right: 1px solid rgb(235, 229, 229);
+  padding: 10px;
+  color: #6A7381;
+}
+.tables-p4 th:last-child, .tables-p4 td:last-child {
+  border-right: none; /* Remove the right border for the last column */
+}
+
+.ant-p4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+@media (max-width: 1000px) {
+  .ant-p4 {
+    overflow-x: auto;
+  }
+}
+.ant-p4 p {
+  padding-right: 10px;
+  font-size: 14px;
+  color: #5c5b5b;
+}
+
+.p4-buttonz {
+  float: right;
+  width: 100%;
+  margin-top: 50px;
+}
+.p4-buttonz button {
+  border: none;
+  float: right;
+}
+
+.bigmodal-p4 {
+  width: 1000px;
+}
+
+.ant-modal-content {
+  width: 1000px;
+  margin-right: 100px;
+  position: absolute;
+  left: -150px;
+  color: #595D6E;
+}
+@media (max-width: 1200px) {
+  .ant-modal-content {
+    width: 700px;
+  }
+}
+@media (max-width: 1000px) {
+  .ant-modal-content {
+    width: 600px;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .ant-modal-content {
+    width: 500px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 550px) {
+  .ant-modal-content {
+    width: 400px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .ant-modal-content {
+    width: 250px;
+    margin-left: 150px;
+  }
+}
+.ant-modal-content .inner-contentp44 {
+  width: 90%;
+  padding: 20px;
+  font-size: 13px;
+}
+.ant-modal-content .inner-contentp44 label {
+  font-size: 13px;
+}
+.ant-modal-content .inner-contentp44 input {
+  width: 100%;
+  height: 30px;
+  background-color: #DADADA;
+  border: none;
+  padding: 10px 0 10px 30px;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+.ant-modal-content .inner-contentp44 .white-line {
+  width: 100%;
+  height: 30px;
+  border: 0.1px solid rgba(128, 128, 128, 0.3);
+  font-size: 13px;
+  padding: 5px 0 5px 30px;
+  margin: 10px 0 5px 0;
+}
+.ant-modal-content .mta-p4 {
+  width: 100%;
+  height: 60px;
+}
+.ant-modal-content .mta-p4 img {
+  margin: 10px !important;
+}/*# sourceMappingURL=Pemantauan4.css.map */

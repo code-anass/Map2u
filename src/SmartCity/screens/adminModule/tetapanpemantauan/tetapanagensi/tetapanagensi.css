@@ -1,0 +1,47 @@
+.tetapan-agensi {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  min-height: 80vh;
+}
+.tetapan-agensi .table-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(228, 224, 224);
+  margin-top: 10px;
+  border-radius: 5px;
+  min-height: 400px;
+}
+.tetapan-agensi .table-data th {
+  background-color: var(--table-head);
+  color: var(--white);
+  text-align: center;
+}
+.tetapan-agensi .table-data td {
+  text-align: center;
+}
+.tetapan-agensi .table-data p {
+  font-size: 12px;
+}
+.tetapan-agensi .ta-btn-row {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  right: 20px;
+  margin-top: 10px;
+}
+.tetapan-agensi .ta-btn-row .btn {
+  padding: 5px 10px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+.tetapan-agensi .ta-btn-row .btn-c {
+  background-color: var(--secondary);
+}
+
+.icon-kem {
+  font-size: 20px;
+}/*# sourceMappingURL=tetapanagensi.css.map */

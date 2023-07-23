@@ -1,0 +1,150 @@
+.admin-dashboard {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.admin-dashboard .boxes {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.admin-dashboard .boxes .left {
+  flex: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 400px;
+  gap: 15px;
+}
+.admin-dashboard .boxes .left .boxes-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.admin-dashboard .boxes .left .boxes-inner .box {
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+}
+.admin-dashboard .boxes .left .boxes-inner .box .lft {
+  flex: 1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.admin-dashboard .boxes .left .boxes-inner .box .lft h2 {
+  color: var(--white);
+}
+.admin-dashboard .boxes .left .boxes-inner .box .lft p {
+  color: var(--white);
+}
+.admin-dashboard .boxes .left .boxes-inner .box .lft p.head {
+  font-size: 12px;
+}
+.admin-dashboard .boxes .left .boxes-inner .box .rght {
+  flex: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-dashboard .boxes .left .chart-inner {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10px;
+  height: 300px;
+  border-radius: 5px;
+}
+.admin-dashboard .boxes .left .chart-inner h3 {
+  text-align: center;
+}
+.admin-dashboard .boxes .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.admin-dashboard .boxes .right .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-dashboard .boxes .right .desc .heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-dashboard .boxes .right .desc .icons {
+  font-size: 25px;
+}
+.admin-dashboard .boxes .right .desc span {
+  font-size: 13px;
+}
+.admin-dashboard .table-data {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 10px;
+  min-height: 300px;
+}
+.admin-dashboard .table-data th {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+.admin-dashboard .table-data th > .bill {
+  width: 50px !important;
+}
+.admin-dashboard .table-data td {
+  text-align: center;
+}
+.admin-dashboard .table-data td .td-span {
+  background-color: yellow;
+}
+
+.bg-yel {
+  background-color: var(--yellow-dark);
+}
+
+.bg-yel-lt {
+  background-color: var(--yellow-light);
+}
+
+.bg-red-lt {
+  background-color: var(--red-light);
+}
+
+.bg-red-lts {
+  background-color: var(--red-lightest);
+}
+
+.bg-gr-lt {
+  background-color: var(--secondary);
+}
+
+.bg-gr-lts {
+  background-color: var(--light-green);
+}
+
+.box-icon {
+  font-size: 40px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.bg1 {
+  color: var(--orange-lts);
+}
+
+.bg2 {
+  color: var(--orange-lt);
+}
+
+.bg3 {
+  color: var(--orange);
+}/*# sourceMappingURL=admindashboard.css.map */

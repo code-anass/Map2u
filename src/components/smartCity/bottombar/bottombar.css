@@ -1,0 +1,11 @@
+.bottom-bar {
+  bottom: 0;
+  position: fixed;
+  background-color: var(--white);
+  width: 100%;
+  height: 30px;
+}
+.bottom-bar p {
+  padding: 5px;
+  text-align: center;
+}/*# sourceMappingURL=bottombar.css.map */

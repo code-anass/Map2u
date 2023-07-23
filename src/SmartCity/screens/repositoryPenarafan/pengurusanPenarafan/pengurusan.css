@@ -1,0 +1,27 @@
+.pengurusan {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.pengurusan .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+  background-color: var(--white);
+}
+.pengurusan .top h3 {
+  color: var(--blue);
+  font-size: 25px;
+}
+.pengurusan .top button {
+  color: var(--white);
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.pengurusan .top img {
+  width: 150px;
+  height: 150px;
+}/*# sourceMappingURL=pengurusan.css.map */

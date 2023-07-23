@@ -1,0 +1,50 @@
+.cms-module {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  min-height: 80vh;
+}
+.cms-module .table-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(228, 224, 224);
+  margin-top: 10px;
+  border-radius: 5px;
+  min-height: 500px;
+}
+.cms-module .table-data th {
+  background-color: var(--table-head);
+  color: var(--white);
+  text-align: center;
+}
+.cms-module .table-data td {
+  text-align: center;
+}
+.cms-module .table-data .row-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  margin-top: 5px;
+}
+.cms-module .table-data .row-data .tambah {
+  background-color: rgb(49, 49, 238);
+  color: var(--white);
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.cms-module .table-data .ant-table-thead .ant-table-cell {
+  background-color: #678891 !important;
+  color: var(--white) !important;
+}
+
+.icon-cms {
+  font-size: 20px;
+}/*# sourceMappingURL=cmsmodule.css.map */

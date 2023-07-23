@@ -1,0 +1,29 @@
+.status-permohonan {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--primary);
+}
+.status-permohonan img {
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.status-permohonan h3 {
+  color: var(--secondary);
+  text-align: center;
+  padding: 20px 0px;
+}
+.status-permohonan .permohonan-table {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 5px;
+  min-height: 50vh;
+}
+
+@media screen and (max-width: 700px) {
+  .status-permohonan .permohonan-table {
+    width: 280px;
+    overflow-x: auto;
+  }
+}/*# sourceMappingURL=statuspermohonan.css.map */

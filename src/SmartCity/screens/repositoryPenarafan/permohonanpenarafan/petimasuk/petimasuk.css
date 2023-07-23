@@ -1,0 +1,40 @@
+.petimasuk-x {
+  padding: 10px;
+  min-height: 80vh;
+  margin: 10px;
+  background-color: var(--white);
+}
+.petimasuk-x .actions {
+  display: flex;
+  padding: 10px;
+  padding-left: 0px;
+  gap: 20px;
+}
+.petimasuk-x .actions .btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+.petimasuk-x .actions .btn-read {
+  background-color: var(--dark-voilet);
+}
+.petimasuk-x .list .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.petimasuk-x .list .item p {
+  margin: 0px;
+  color: var(--blue);
+}
+.petimasuk-x .list .item .peti-icon {
+  color: var(--blue);
+  font-size: 22px;
+}
+.petimasuk-x .list .item:hover {
+  background-color: rgb(245, 244, 242);
+}/*# sourceMappingURL=petimasuk.css.map */

@@ -1,0 +1,87 @@
+.pengesahan {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pengesahan .main-h {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.pengesahan .top-row {
+  display: flex;
+  justify-content: space-around;
+}
+.pengesahan .top-row .p-h {
+  color: var(--white);
+  padding: 5px 45px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 15px;
+}
+.pengesahan .top-row .p-h .icon {
+  font-size: 20px;
+}
+.pengesahan .top-row .belum {
+  background-color: var(--table-head-drk);
+}
+.pengesahan .top-row .not-belum {
+  background-color: var(--table-head-lt);
+}
+.pengesahan .table-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
+  border: 1px solid rgb(228, 224, 224);
+  margin-right: 10px;
+  border-radius: 5px;
+  min-height: 500px;
+  background-color: var(--white);
+}
+.pengesahan .table-data .desc {
+  font-size: 14px;
+}
+.pengesahan .table-data .filter-row {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.pengesahan .table-data .filter-row .my-div {
+  width: 200px;
+}
+.pengesahan .table-data th {
+  background-color: var(--table-head);
+  color: var(--white);
+  text-align: center;
+}
+.pengesahan .table-data th > .bill {
+  width: 50px !important;
+}
+.pengesahan .table-data td {
+  text-align: center;
+}
+.pengesahan .table-data td .td-span {
+  background-color: yellow;
+}
+.pengesahan .table-data td .td-disahkan {
+  background-color: var(--green-new);
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.icon-cms-eye {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.icon-penges {
+  font-size: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=pengesahan.css.map */

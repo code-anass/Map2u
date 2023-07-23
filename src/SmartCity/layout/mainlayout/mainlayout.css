@@ -1,0 +1,7 @@
+.mainlayout {
+  width: 100%;
+  min-height: 100vh;
+}
+.mainlayout .content {
+  padding-top: 55px;
+}/*# sourceMappingURL=mainlayout.css.map */

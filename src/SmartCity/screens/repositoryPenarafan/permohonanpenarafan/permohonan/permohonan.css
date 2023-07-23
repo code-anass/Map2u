@@ -1,0 +1,39 @@
+.permohonan {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--primary);
+}
+.permohonan img {
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.permohonan .steps-bar {
+  width: 80%;
+  margin: auto;
+}
+.permohonan .steps-content {
+  width: 100%;
+  min-height: 80vh;
+}
+.permohonan .steps-footer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.permohonan .steps-footer .btn-x {
+  display: flex;
+  gap: 10px;
+}
+.permohonan .icon-permohonan {
+  font-size: 20px;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+  background: var(--white);
+}/*# sourceMappingURL=permohonan.css.map */

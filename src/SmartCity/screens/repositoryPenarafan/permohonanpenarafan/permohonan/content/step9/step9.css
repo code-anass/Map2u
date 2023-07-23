@@ -1,0 +1,160 @@
+.step9-form {
+  width: 80%;
+  margin: auto;
+  background-color: yello;
+  flex-direction: column;
+}
+.step9-form .heading {
+  font-weight: bold;
+  color: var(--secondary);
+  text-align: center;
+}
+.step9-form .notice {
+  width: 100%;
+  background-color: var(--light-green);
+  min-height: 50px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.step9-form .notice:first-child {
+  background-color: red;
+}
+.step9-form h3 {
+  color: var(--white);
+  padding-top: 10px;
+}
+.step9-form i,
+.step9-form li,
+.step9-form p {
+  color: var(--grey-light);
+  padding-top: 10px;
+}
+.step9-form .form-inputs {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.step9-form .form-inputs p {
+  margin: 0px;
+  font-size: 15px;
+  color: var(--white);
+}
+.step9-form .form-inputs p span {
+  color: var(--red);
+}
+.step9-form .form-inputs .span-x {
+  color: var(--grey-light);
+  padding-bottom: 20px;
+}
+.step9-form .table-data {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+}
+.step9-form .table-data .table-content {
+  min-height: 45vh;
+  overflow-y: auto;
+}
+.step9-form .table-data .table-content h2 {
+  color: var(--blue);
+  padding: 10px;
+  padding-left: 0px;
+}
+.step9-form .table-data .table-content .imgs-div {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  min-height: 45vh;
+  border: 1px solid var(--grey-light);
+  border-radius: 10px;
+  padding: 15px;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs {
+  width: 97%;
+  cursor: pointer;
+  margin: auto;
+  min-height: 40vh;
+  padding: 10px;
+  border: 1px dashed var(--grey-light);
+  border-radius: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 220px);
+  place-content: center;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container {
+  border: 1px solid var(--grey-light);
+  height: 250px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  position: relative;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-top {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  overflow-y: auto;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-name {
+  display: flex;
+  justify-content: center;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-name p {
+  margin: 0;
+  text-align: center;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-footer .icon-chk {
+  color: var(--secondary);
+  font-size: 22px;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-footer .img-zoom {
+  padding: 5px 10px;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-footer .img-zoom:hover {
+  background-color: darkmagenta;
+  border-radius: 5px;
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs .img-container .img-footer .img-zoom:hover .zoo {
+  color: var(--white);
+}
+.step9-form .table-data .table-content .imgs-div .draggable-imgs:hover {
+  cursor: pointer;
+  border: 2px dashed var(--grey-light);
+}
+.step9-form .table-data .table-content .btnn {
+  margin: 5px 0px;
+}
+.step9-form .table-data .table-content .imgs-upload {
+  display: none;
+}
+.step9-form .table-data .table-content .ext-note {
+  color: var(--red);
+}
+.step9-form .table-data .table-content .icon-del {
+  color: var(--red);
+}
+.step9-form .table-data .table-footer {
+  padding: 10px;
+}
+
+.my-row {
+  padding: 10px 0px;
+}
+.my-row .spn {
+  color: var(--white);
+}/*# sourceMappingURL=step9.css.map */

@@ -1,0 +1,45 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+.home img {
+  height: 100%;
+  width: 100%;
+}
+.home .headings-main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  top: 100px;
+}
+.home .headings-main h1 {
+  color: var(--white);
+  font-size: 40px;
+  text-align: center;
+}
+.home .headings-main h3 {
+  text-align: center;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 750px) {
+  .home {
+    min-height: 30vh;
+  }
+  .home img {
+    width: 100%;
+  }
+  .home .headings-main {
+    top: 50px;
+    width: 90%;
+  }
+  .home .headings-main h1 {
+    font-size: 18px;
+  }
+  .home .headings-main h3 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=home.css.map */
