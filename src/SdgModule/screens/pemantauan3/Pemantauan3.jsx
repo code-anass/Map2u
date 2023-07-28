@@ -49,15 +49,15 @@ const Pemantauan3 = () => {
               </div>
 
               <div className='inputs-p2'>
-                <div className='inner1-p2'>
+                <div className='inner1-p33'>
                   <span>Komponen</span><br />
-                  <input placeholder='Pengangkutan' />
+                  <input placeholder='Pengangkutan'  />
                   <div className='icons'>
                     <RxCross2/>
                     <IoMdArrowDropup style={{ marginBottom:"10px"}}/>
                   </div>
                 </div>
-                <div className='inner2-p3'>
+                <div className='inner2-p333'>
                   <span>Indekatar</span><br />
                   <input placeholder='Perkhidmatan Jalan Setiap 1000 Penduduk' />
                   <div className='icons'>
