@@ -11,6 +11,8 @@ import Pic4 from './assets/pic4.png'
 import Map from './assets/map.png'
 import Dalls6 from './assets/210058.svg'
 import Dalls7 from './assets/Plan Malaysia ngn jata negara.svg'
+import { RxCross2 } from 'react-icons/rx'
+import { IoMdArrowDropup } from 'react-icons/io'
 
 const Pemantauan3 = () => {
   return (
@@ -50,10 +52,18 @@ const Pemantauan3 = () => {
                 <div className='inner1-p2'>
                   <span>Komponen</span><br />
                   <input placeholder='Pengangkutan' />
+                  <div className='icons'>
+                    <RxCross2/>
+                    <IoMdArrowDropup style={{ marginBottom:"10px"}}/>
+                  </div>
                 </div>
                 <div className='inner2-p3'>
                   <span>Indekatar</span><br />
                   <input placeholder='Perkhidmatan Jalan Setiap 1000 Penduduk' />
+                  <div className='icons'>
+                    <RxCross2/>
+                    <IoMdArrowDropup style={{ marginBottom:"10px"}}/>
+                  </div>
                 </div>
                 <div className='btn-p2'>
 
