@@ -4,17 +4,18 @@ import React from "react";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "store";
+import { store } from './redux/store';
 import AppNavigator from 'AppNavigator';
 
-const { persistor, store } = configureStore();
+// const { persistor, store } = configureStore();
 function App() {
 
   return (
     <>
       <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
+        {/* <PersistGate loading={null} persistor={persistor}> */}
           <AppNavigator />
-        </PersistGate>
+        {/* </PersistGate> */}
       </Provider>
     </>
   );

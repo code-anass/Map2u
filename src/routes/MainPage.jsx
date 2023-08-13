@@ -15,7 +15,10 @@ import PageNotFound from "../MainPage/PageNotFound/PageNotFound";
 import { ScrollUp } from "../components/mainPage/dialogs/ScrollUp";
 import { Chat } from "../components/mainPage/dialogs/Chat/Chat";
 import { useDispatch } from "react-redux";
-import { fetchCommonDetails, fetchCommonDetailsSchema } from "../redux/actions/CommonActions";
+import {
+  fetchCommonDetails,
+  fetchCommonDetailsSchema,
+} from "../redux/actions/CommonActions";
 
 import useNetwork from "../redux/middleware/core/NetworkUtils";
 import { fetchAnnouncementsDetails } from "../redux/actions/AnnouncementsActions";
@@ -23,9 +26,8 @@ import { fetchSmartPartnersDetails } from "../redux/actions/SmartPartnersActions
 import { fetchStrategicPartnersDetails } from "../redux/actions/StrategicPartnersActions";
 import { fetchHighlightsDetails } from "../redux/actions/HighlightsActions";
 import CursorComponent from "../components/mainPage/Cursor/CursorComponent";
-import {  PORTAL_URL_END } from '../utils/Constants';
+import { PORTAL_URL_END } from "../utils/Constants";
 import { constants } from "buffer";
-
 
 const MainPage = () => {
   const [lightMode, setLightMode] = useState(true);
@@ -47,7 +49,7 @@ const MainPage = () => {
 
   const MainContainer = styled.div`
     width: 100%;
-   font-family: ${({ theme }) => theme.fontName.Def_Font}, sans-serif;
+    font-family: ${({ theme }) => theme.fontName.Def_Font}, sans-serif;
   `;
   useEffect(() => {
     setShowModal((prev) => !prev);
@@ -65,7 +67,6 @@ const MainPage = () => {
       dispatch(fetchStrategicPartnersDetails());
       dispatch(fetchHighlightsDetails());
       dispatch(fetchCommonDetailsSchema());
-
     }
   }, [counter]);
 
@@ -78,13 +79,12 @@ const MainPage = () => {
   const routes = buildRoutes(RoutesList);
 
   return (
-
     <>
-        <MainContainer>
-          <CursorComponent />
-          <Disclaimer showModal={showModal} setShowModal={setShowModal} />
+      <MainContainer>
+        <CursorComponent />
+        <Disclaimer showModal={showModal} setShowModal={setShowModal} />
 
-          {/* <Home
+        {/* <Home
             handleClick={handleClick}
             t={t}
             lightMode={lightMode}
@@ -92,47 +92,48 @@ const MainPage = () => {
           >
 
           </Home> */}
-          <Routes>
-            <Route
-              path="*"
-              element={
-                <Home
-                  handleClick={handleClick}
-                  t={t}
-                  lightMode={lightMode}
-                  setLightMode={setLightMode}
-                ></Home>
-              }
-            />
-           
-            <Route
-              path="/"
-              element={
-                <Home
-                  handleClick={handleClick}
-                  t={t}
-                  lightMode={lightMode}
-                  setLightMode={setLightMode}
-                ></Home>
-              }
-            />
-
-            <Route path={`${PORTAL_URL_END}`} element={
+        <Routes>
+          <Route
+            path="*"
+            element={
               <Home
-                  handleClick={handleClick}
-                  t={t}
-                  lightMode={lightMode}
-                  setLightMode={setLightMode}
-                ></Home>
-            } >
-  
-            </Route>
+                handleClick={handleClick}
+                t={t}
+                lightMode={lightMode}
+                setLightMode={setLightMode}
+              ></Home>
+            }
+          />
 
-            <Route path="/notfound" element={<PageNotFound />} />
-          </Routes>
-        </MainContainer>
-        <ScrollUp></ScrollUp>
-        <Chat></Chat>
+          <Route
+            path="/"
+            element={
+              <Home
+                handleClick={handleClick}
+                t={t}
+                lightMode={lightMode}
+                setLightMode={setLightMode}
+              ></Home>
+            }
+          />
+
+          <Route
+            path={`${PORTAL_URL_END}`}
+            element={
+              <Home
+                handleClick={handleClick}
+                t={t}
+                lightMode={lightMode}
+                setLightMode={setLightMode}
+              ></Home>
+            }
+          ></Route>
+
+          <Route path="/notfound" element={<PageNotFound />} />
+        </Routes>
+      </MainContainer>
+      <ScrollUp></ScrollUp>
+      <Chat></Chat>
     </>
   );
 };

@@ -4,7 +4,7 @@
  */
 import { FormatString, URLS } from "../../../services/config/urls";
 import { apiRequest, API_ERROR, API_SUCCESS } from "../../actions/ApiActions";
-import { LoginUserName, LoginPassword } from "../../../config/config";
+import { LoginUserName, LoginPassword } from "config/mainConfig/config/config";
 import {
   setR_AND_DDetails,
   R_AND_D_UPDATES,
