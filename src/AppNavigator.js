@@ -3,7 +3,6 @@ import SmartCity from "./routes/SmartCity";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import { Routes, Route } from "react-router-dom";
 
-import "./App.css";
 import "assets/boxicons/css/boxicons.min.css";
 import "assets/remixicon/remixicon.css";
 import "assets/bootstrap-icons/bootstrap-icons.css";
@@ -17,12 +16,14 @@ import Landing from "./MUO/pages/Landing/Landing";
 // Redux
 import { useSelector } from "react-redux";
 import SdgModule from "routes/SdgModule";
+import MainPage from "routes/MainPage";
 
 function App() {
   const [isAuth, setIsAuth] = useState(true);
   const [isSmartCity, setIsSmartCity] = useState(false);
   const AuthUser = useSelector((state) => state.authUser.token);
-  const [isSdgModule, setIsSdgModule] = useState(true);
+  const [isSdgModule, setIsSdgModule] = useState(false);
+  const [isMainPage, setIsMainPage] = useState(true);
 
   return (
     <>
@@ -46,7 +47,9 @@ function App() {
         )
       ) : isSdgModule ? (
         <SdgModule/>
-      ) : (
+      ) : isMainPage ? (
+        <MainPage/>
+      ): (
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
