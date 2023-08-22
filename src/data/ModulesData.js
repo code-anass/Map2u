@@ -1,4 +1,4 @@
-const basePath = 'assets/images/modules/module_1/'
+const basePath = '../assets/images/modules/module_1/'
 
 export const modulesData = [
     {

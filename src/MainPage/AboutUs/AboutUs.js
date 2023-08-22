@@ -78,7 +78,7 @@ const AboutUs = (state,) => {
     }
 
     const [isSelected, setSelected] = useState(1);
-    const basePath = 'assets/images/settings/';
+    const basePath = '../assets/images/settings/';
     const imageLocal = basePath + "w3c.jpg";
     const { t } = useTranslation();
 

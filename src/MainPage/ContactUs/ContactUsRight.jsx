@@ -88,7 +88,7 @@ const ContactUsRight = (props) => {
               {/* {footerDetails.footer_header}  {footerDetails.footer_desc} */}
             </RightH1>
 
-            <ImageWrapper src="assets/hq.jpg" alt="" />
+            <ImageWrapper src="../assets/hq.jpg" alt="" />
             <H3>
               {/* {t('ContactUs.DH2')} */}
               {/* {footerDetails.footer_address} */}

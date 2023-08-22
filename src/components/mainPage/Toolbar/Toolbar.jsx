@@ -81,7 +81,7 @@ const Toolbar = ({ toggle, toggleTop, handleClick }) => {
     <>
       <Top >
         <TopbarContainer>
-          <TopbarLogo  onClick={() => loadRefreshContent()} ><TopbarLogoImg src={'assets/topbarlogo.png'} /></TopbarLogo>
+          <TopbarLogo  onClick={() => loadRefreshContent()} ><TopbarLogoImg src={'../assets/topbarlogo.png'} /></TopbarLogo>
           <MobileIcon onClick={toggle}>
             <FaBars color='green' />
           </MobileIcon>
@@ -89,10 +89,10 @@ const Toolbar = ({ toggle, toggleTop, handleClick }) => {
             <NavMenu>
 
               <NavItem>
-                <NavLinks onClick={() => handleClick('ms')}><TopbarLogoImg title="Malaysia" lang='true' src={'assets/lang_ms.png'} /></NavLinks>
+                <NavLinks onClick={() => handleClick('ms')}><TopbarLogoImg title="Malaysia" lang='true' src={'../assets/lang_ms.png'} /></NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks onClick={() => handleClick('en')}><TopbarLogoImg title="English" lang='true' src={'assets/lang_en.png'} /></NavLinks>
+                <NavLinks onClick={() => handleClick('en')}><TopbarLogoImg title="English" lang='true' src={'../assets/lang_en.png'} /></NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks >{(fetchDateTime()).toUpperCase()}</NavLinks>

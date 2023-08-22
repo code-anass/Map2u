@@ -14,7 +14,7 @@ import FAQCard from './FAQCard';
 
 
 const FAQPage = ({ t }) => {
-  const basePath = 'assets/images/settings/';
+  const basePath = '../assets/images/settings/';
 
   const imageLocal = basePath + "contact_bg.jpg";
   useEffect(() => {

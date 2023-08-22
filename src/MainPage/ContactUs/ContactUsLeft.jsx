@@ -64,7 +64,7 @@ import { MAX_LENGTH_CAPTCHA, MAX_LENGTH_NAME, MAX_LENGTH_REMARKS } from "../../u
 import DropdownComp from "../../components/mainPage/Search/DropdownComp";
 
 const ContactUsLeft = (state) => {
-  const basePath = "assets/images/settings/";
+  const basePath = "../assets/images/settings/";
 
   const { t } = useTranslation();
 

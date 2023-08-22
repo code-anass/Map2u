@@ -1,6 +1,6 @@
 import { ROUTE_LOCAL, ROUTE_NATIONAL, ROUTE_REGION, ROUTE_STATE } from "../utils/Constants"
 
-const basePath ='assets/images/insights/'
+const basePath ='../assets/images/insights/'
 
 export const insightsData = [
     {

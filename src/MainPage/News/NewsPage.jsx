@@ -24,7 +24,7 @@ import { ButtonOption } from "../Search/SearchStyle";
 import { ButtonOptionNews } from "./NewsCardStyles";
 
 const NewsPage = (state) => {
-  const basePath = "assets/images/settings/";
+  const basePath = "../assets/images/settings/";
 
   const imageLocal = basePath + "w3c.jpg";
   const dispatch = useDispatch();

@@ -1,4 +1,4 @@
-const image="assets/hq.jpg";
+const image="../assets/hq.jpg";
 
 export const AboutNSCPData = [
     {

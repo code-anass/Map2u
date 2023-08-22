@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Body = styled.body`
-  // background-image: url('assets/images/settings/contact_bg.jpg') ;
+  // background-image: url('../assets/images/settings/contact_bg.jpg') ;
   overflow: hidden;
   position: relative;
   // box-shadow: rgba(7, 8, 24, 0.67) 0px 0px 0px 2000px inset;

@@ -13,7 +13,7 @@ import { disclaimerContent } from '../data/DisclaimerData'
 
 
 const DisclaimerPage = ({ t }) => {
-  const basePath = 'assets/images/settings/';
+  const basePath = '../assets/images/settings/';
 
   const imageLocal = basePath + "w3c.jpg";
 

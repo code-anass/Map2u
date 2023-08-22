@@ -162,7 +162,7 @@ const Navbar = (state) => {
     <HeaderContainer>
       {/* <header id="header" className="header fixed-top" style={{width:"100%", backgroundColor: "rgba(255, 255, 255, 0.9)", color: "#000000 !important", boxShadow: "0px 2px 20px rgba(1, 41, 112, 0.1)", position:"sticky", zIndex: "10"}}> */}
       <HeaderLogo
-        src={"assets/logo.png"}
+        src={"../assets/logo.png"}
         onClick={() => loadRefreshContent()}
         alt=""
       />

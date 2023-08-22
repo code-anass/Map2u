@@ -1,4 +1,4 @@
-const basePath = "assets/images/themes/compressed/";
+const basePath = "../assets/images/themes/compressed/";
 
 export const dataLayer = [
   {

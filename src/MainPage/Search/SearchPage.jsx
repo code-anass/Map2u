@@ -21,7 +21,7 @@ const SearchPage = (state, props) => {
 
   const item = location.state?.data;
 
-  const basePath = 'assets/images/settings/';
+  const basePath = '../assets/images/settings/';
 
   const imageLocal = basePath + "w3c.jpg";
   useEffect(() => {

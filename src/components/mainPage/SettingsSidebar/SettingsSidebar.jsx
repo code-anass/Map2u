@@ -36,10 +36,10 @@ const SettingsSidebar = ({ isSettingsOpen, closeWindow, handleClick, lightMode, 
             <SideNavCard>
                 <SubHeadText upprcase="true">{t('settings.changeLanguage')}</SubHeadText>
                 <SidebarMenu style={{justifyContent: 'start', marginLeft:'18px'}}>
-                    <SidebarLink   to="" onClick={() => handleClick('ms')}><TopbarLogoImg lang='true' src={'assets/lang_ms.png'} />  Malaysia</SidebarLink>
+                    <SidebarLink   to="" onClick={() => handleClick('ms')}><TopbarLogoImg lang='true' src={'../assets/lang_ms.png'} />  Malaysia</SidebarLink>
                 </SidebarMenu>
                 <SidebarMenu style={{justifyContent: 'start', marginLeft:'18px'}}>
-                    <SidebarLink   to="" onClick={() => handleClick('en')}><TopbarLogoImg lang='true' src={'assets/lang_en.png'} />  English</SidebarLink>
+                    <SidebarLink   to="" onClick={() => handleClick('en')}><TopbarLogoImg lang='true' src={'../assets/lang_en.png'} />  English</SidebarLink>
                 </SidebarMenu>
 
                 {/* <Barrier/> */}

@@ -46,8 +46,8 @@ const FooterSocial = (props) => {
 				<div className="widget">
 					<ul className="footer-social">
 						<FooterLogo >
-							<SocialIcon onClick={() => { redirectPage(footerDetails.playstore_link) }} style={{ width: "120px" }} src="assets/images/mobile/google_play.png" />
-							<SocialIcon onClick={() => { redirectPage(footerDetails.appstore_link) }} style={{ width: "100px" }} src="assets/images/mobile/apple_store.png" />
+							<SocialIcon onClick={() => { redirectPage(footerDetails.playstore_link) }} style={{ width: "120px" }} src="../assets/images/mobile/google_play.png" />
+							<SocialIcon onClick={() => { redirectPage(footerDetails.appstore_link) }} style={{ width: "100px" }} src="../assets/images/mobile/apple_store.png" />
 						</FooterLogo>
 
 

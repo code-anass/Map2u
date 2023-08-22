@@ -3,7 +3,7 @@ import { MdArrowForward } from 'react-icons/md';
 import {Button, Input} from '../GlobalStyles';
 import { TopbarLogo, TopbarLogoImg } from '../Toolbar/ToolbarStyles';
 import { ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroHeading, HeroText, VideoBg } from './HeroSectionStyles'
-
+// import {TEst} from '../assets/'
 const Hero = ({t}) => {
   const [hover, setHover] = useState(false);
   const onHover =()=>{
@@ -12,7 +12,7 @@ const Hero = ({t}) => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay muted src={'assets/videos/MUOlogo.mp4'} type='video/mp4' />
+        <VideoBg autoPlay muted src={'../assets/videos/MUOlogo.mp4'} type='video/mp4' />
       </HeroBg>
       {/* <HeroContent>
       <TopbarLogo to='/'><TopbarLogoImg src={'assets/logo.png'} /></TopbarLogo>

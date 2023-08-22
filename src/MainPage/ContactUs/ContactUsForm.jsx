@@ -19,7 +19,7 @@ import { footerResponse } from '../../data/FooterDefault'
 const ContactComponent = (state) => {
 
 
-  const basePath = 'assets/images/settings/';
+  const basePath = '../assets/images/settings/';
 
   const { t } = useTranslation();
 
