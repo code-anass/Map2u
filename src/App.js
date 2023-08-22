@@ -6,6 +6,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "store";
 import { store } from './redux/store';
 import AppNavigator from 'AppNavigator';
+import './i18n/i18next';
+
 
 // const { persistor, store } = configureStore();
 function App() {
